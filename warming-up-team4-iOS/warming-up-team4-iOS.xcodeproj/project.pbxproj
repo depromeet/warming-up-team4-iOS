@@ -58,9 +58,11 @@
 		7B4EBFA9235A1BB400B12536 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7B4EBFAB235A1BEF00B12536 /* Feed */,
-				7B4EBFAD235A1C9B00B12536 /* Write */,
-				7B4EBFAC235A1C1300B12536 /* Setting */,
+				7B4EBFAB235A1BEF00B12536 /* [01]Feed */,
+				7B8B837F235AF2790017D1A6 /* [02]Category */,
+				7B8B8380235AF2840017D1A6 /* [03]Chatting */,
+				7B4EBFAD235A1C9B00B12536 /* [04]Write */,
+				7B4EBFAC235A1C1300B12536 /* [05]My */,
 				7B4EBFAA235A1BD500B12536 /* Common */,
 			);
 			path = Modules;
@@ -74,25 +76,26 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		7B4EBFAB235A1BEF00B12536 /* Feed */ = {
+		7B4EBFAB235A1BEF00B12536 /* [01]Feed */ = {
 			isa = PBXGroup;
 			children = (
+				7B4EBFB2235AE78800B12536 /* [01-01]FeedMain */,
 			);
-			path = Feed;
+			path = "[01]Feed";
 			sourceTree = "<group>";
 		};
-		7B4EBFAC235A1C1300B12536 /* Setting */ = {
+		7B4EBFAC235A1C1300B12536 /* [05]My */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Setting;
+			path = "[05]My";
 			sourceTree = "<group>";
 		};
-		7B4EBFAD235A1C9B00B12536 /* Write */ = {
+		7B4EBFAD235A1C9B00B12536 /* [04]Write */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Write;
+			path = "[04]Write";
 			sourceTree = "<group>";
 		};
 		7B4EBFB1235A282300B12536 /* TabBar */ = {
@@ -101,6 +104,27 @@
 				7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7B4EBFB2235AE78800B12536 /* [01-01]FeedMain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "[01-01]FeedMain";
+			sourceTree = "<group>";
+		};
+		7B8B837F235AF2790017D1A6 /* [02]Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "[02]Category";
+			sourceTree = "<group>";
+		};
+		7B8B8380235AF2840017D1A6 /* [03]Chatting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "[03]Chatting";
 			sourceTree = "<group>";
 		};
 		94F444B7FA0B8C6CF5FA9ACA /* Frameworks */ = {
@@ -404,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.krgoodnews.warming-up-team4-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barterbetter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -426,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.krgoodnews.warming-up-team4-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barterbetter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
