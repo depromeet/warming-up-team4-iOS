@@ -7,12 +7,22 @@
 //
 
 import UIKit
-
+import SwiftUI
 class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let feed = UIHostingController(rootView: FeedView())
+               //mainTabBarController.addChild(feed)
+        
+        //let firstViewController = firstVC()
+                
+        feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
 
+       
+        let tabBarList = [feed]
+
+        viewControllers = tabBarList
         // Do any additional setup after loading the view.
     }
     

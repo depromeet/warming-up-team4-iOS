@@ -12,10 +12,26 @@ struct FeedView: View {
     @State var users = ["Munon", "Gomin", "Durup"]
     let height: CGFloat = 100.0
     var body: some View {
-       
-        VStack {
+//        NavigationView {
+//            VStack {
+//
+//                       content
+//                   }
+//        }
+       // .navigationBarTitle(Text("Home"))
+       // .navigationBarHidden(true)
+       NavigationView {
+           VStack {
+//           NavigationLink(destination: Text("Button Clicked")) {
+//               Text("Hello World")
+//               .background(Color.yellow)
             appTitle
             content
+         //  }
+        //    Spacer()
+        }.navigationBarTitle(Text("Title")) // Add this line
+        .navigationBarHidden(true)
+        
         }
     }
     var content: some View {
@@ -46,9 +62,20 @@ struct FeedView: View {
     }
     
     var appTitle: some View {
-        Rectangle()
-        .fill(Color.white.opacity(1))
-        .frame( height: 50)
+         HStack (alignment: .bottom) {
+                Spacer()
+                   Button(action: {}) {
+                       Text("close")
+                       // self.link.presented?.value = false
+                   }
+                   
+                   Button(action: {}) {
+                       Text("share")
+                   }.frame(alignment: .trailing)
+                   
+               }
+        
+               .frame(height: 50)
         
     }
 }
@@ -56,25 +83,28 @@ struct FeedView: View {
 
 struct FeedCellView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Image("feed_image")
-                .resizable()
-                .frame(height: 300)
-                .clipped()
-            Text("베드트레이 교환 원해요")
-                .font(Font.custom("NanumSquareOTF_acR", size: 30))
+        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
+            VStack(alignment: .leading, spacing: 6) {
+                Image("feed_image")
+                    .resizable()
+                    .frame(height: 300)
+                    .clipped()
+                Text("베드트레이 교환 원해요")
+                    .font(Font.custom("NanumSquareOTF_acR", size: 30))
+                    
+                Text("23명이 교환원해요")
+                    .foregroundColor(Color("app_point_color"))
+                    .font(Font.custom("NanumSquareOTF_acR", size: 14))
+                Text("침대에서 정말 사용하기 편해요. 색상도 이쁘고 원목이라..")
+                    .foregroundColor(Color("app_list_cotent_color"))
+                    .font(Font.custom("NanumSquareOTF_acR", size: 14))
                 
-            Text("23명이 교환원해요")
-                .foregroundColor(Color("app_point_color"))
-                .font(Font.custom("NanumSquareOTF_acR", size: 14))
-            Text("침대에서 정말 사용하기 편해요. 색상도 이쁘고 원목이라..")
-                .foregroundColor(Color("app_list_cotent_color"))
-                .font(Font.custom("NanumSquareOTF_acR", size: 14))
-            
-            
-        }.padding(.leading, 20)
-        .padding(.bottom, 20)
-            .padding(.trailing, -20)
+                
+            }.padding(.leading, 20)
+            .padding(.bottom, 20)
+                .padding(.trailing, -20)
+        }
+        
             
         
     }

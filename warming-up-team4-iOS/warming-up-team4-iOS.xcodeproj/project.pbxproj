@@ -10,6 +10,7 @@
 		4C24183215FC7A7D4F5B4075 /* Pods_warming_up_team4_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */; };
 		7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */; };
 		7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AB235DDF83003E369C /* FeedView.swift */; };
+		7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */; };
 		CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC634235442BC00A5CD9E /* AppDelegate.swift */; };
 		CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC636235442BC00A5CD9E /* SceneDelegate.swift */; };
 		CE2DC63C235442BC00A5CD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DC63A235442BC00A5CD9E /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7BDDD6AB235DDF83003E369C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
 		A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2DC631235442BC00A5CD9E /* warming-up-team4-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "warming-up-team4-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2DC634235442BC00A5CD9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7B4EBFB2235AE78800B12536 /* [01-01]FeedMain */,
+				7BDDD6AD235DE49F003E369C /* [01-02]FeedDetail */,
 			);
 			path = "[01]Feed";
 			sourceTree = "<group>";
@@ -134,6 +137,22 @@
 			isa = PBXGroup;
 			children = (
 				7BDDD6AB235DDF83003E369C /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BDDD6AD235DE49F003E369C /* [01-02]FeedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7BDDD6B0235DE4F1003E369C /* View */,
+			);
+			path = "[01-02]FeedDetail";
+			sourceTree = "<group>";
+		};
+		7BDDD6B0235DE4F1003E369C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +301,7 @@
 				7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */,
 				CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */,
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,
+				7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */,
 				7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
