@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         // tabar
         let mainTabBarController = MainTabBarController()
+       
         window?.rootViewController = mainTabBarController
-        window?.rootViewController?.view.backgroundColor = .blue
         window?.makeKeyAndVisible()
     }
 
