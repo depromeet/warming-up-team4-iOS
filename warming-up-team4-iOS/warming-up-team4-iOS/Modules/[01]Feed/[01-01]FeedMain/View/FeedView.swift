@@ -8,27 +8,20 @@
 
 import SwiftUI
 import Combine
+
+
+
 struct FeedView: View {
     @State var users = ["Munon", "Gomin", "Durup"]
     let height: CGFloat = 100.0
     var body: some View {
-//        NavigationView {
-//            VStack {
-//
-//                       content
-//                   }
-//        }
-       // .navigationBarTitle(Text("Home"))
-       // .navigationBarHidden(true)
+
        NavigationView {
            VStack {
-//           NavigationLink(destination: Text("Button Clicked")) {
-//               Text("Hello World")
-//               .background(Color.yellow)
-            appTitle
+            
+            AppNavigationView()
             content
-         //  }
-        //    Spacer()
+       
         }.navigationBarTitle(Text("Title")) // Add this line
         .navigationBarHidden(true)
         
@@ -37,46 +30,13 @@ struct FeedView: View {
     var content: some View {
         List {
             //ScrollView {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("빵미미")
-                        .foregroundColor(Color("app_point_color"))
-                        .font(Font.custom("NanumSquareOTF_acR", size: 32))
-                    Text("님,")
-                        .font(Font.custom("NanumSquareOTF_acR", size: 32))
-                }
-                Text("오늘 올라온 상품이에요.")
-                    .font(Font.custom("NanumSquareOTF_acR", size: 32))
-                
-                Text("서울대학교")
-                    .foregroundColor(Color("app_point_color"))
-                    .font(Font.custom("NanumSquareOTF_acR", size: 10))
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topTrailing)
-            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
             
-    
+            
+            LargeTitleView()
             ForEach(users, id:  \.self) { user in
                 FeedCellView()
             }
         }
-    }
-    
-    var appTitle: some View {
-         HStack (alignment: .bottom) {
-                Spacer()
-                   Button(action: {}) {
-                       Text("close")
-                       // self.link.presented?.value = false
-                   }
-                   
-                   Button(action: {}) {
-                       Text("share")
-                   }.frame(alignment: .trailing)
-                   
-               }
-        
-               .frame(height: 50)
-        
     }
 }
 //.font(Font.custom("Montserrat-Bold", size: 60.0))
@@ -90,7 +50,7 @@ struct FeedCellView: View {
                     .frame(height: 300)
                     .clipped()
                 Text("베드트레이 교환 원해요")
-                    .font(Font.custom("NanumSquareOTF_acR", size: 30))
+                    .font(Font.custom("NanumSquareOTF_acEB", size: 30))
                     
                 Text("23명이 교환원해요")
                     .foregroundColor(Color("app_point_color"))

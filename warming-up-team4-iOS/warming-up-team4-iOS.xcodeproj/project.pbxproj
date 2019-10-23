@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4C24183215FC7A7D4F5B4075 /* Pods_warming_up_team4_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */; };
+		7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27AF7C235F2999004A771A /* LargeTitleView.swift */; };
 		7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */; };
+		7BA089D2235E17ED00377A65 /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */; };
+		7BA089D3235E17ED00377A65 /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */; };
+		7BA089D4235E17ED00377A65 /* NanumSquareOTF_acL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */; };
+		7BA089D5235E17ED00377A65 /* NanumSquareOTF_acR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */; };
+		7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D7235F262D00377A65 /* CategoryView.swift */; };
+		7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D9235F272E00377A65 /* AppNavigationView.swift */; };
 		7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AB235DDF83003E369C /* FeedView.swift */; };
 		7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */; };
 		CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC634235442BC00A5CD9E /* AppDelegate.swift */; };
@@ -21,7 +28,14 @@
 /* Begin PBXFileReference section */
 		4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_warming_up_team4_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B27AF7C235F2999004A771A /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acEB.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
+		7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acR.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acR.otf; sourceTree = "<group>"; };
+		7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acL.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acL.otf; sourceTree = "<group>"; };
+		7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acB.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
+		7BA089D7235F262D00377A65 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		7BA089D9235F272E00377A65 /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
 		7BDDD6AB235DDF83003E369C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
 		A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +69,10 @@
 				CE2DC63D235442BD00A5CD9E /* Assets.xcassets */,
 				CE2DC63F235442BD00A5CD9E /* LaunchScreen.storyboard */,
 				CE2DC642235442BD00A5CD9E /* Info.plist */,
+				7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */,
+				7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */,
+				7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */,
+				7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */,
 			);
 			path = SupportingFIles;
 			sourceTree = "<group>";
@@ -75,6 +93,8 @@
 		7B4EBFAA235A1BD500B12536 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7BA089D9235F272E00377A65 /* AppNavigationView.swift */,
+				7B27AF7C235F2999004A771A /* LargeTitleView.swift */,
 				7B4EBFB1235A282300B12536 /* TabBar */,
 			);
 			path = Common;
@@ -122,6 +142,7 @@
 		7B8B837F235AF2790017D1A6 /* [02]Category */ = {
 			isa = PBXGroup;
 			children = (
+				7BA089D6235F260600377A65 /* [02-01] Category */,
 			);
 			path = "[02]Category";
 			sourceTree = "<group>";
@@ -131,6 +152,14 @@
 			children = (
 			);
 			path = "[03]Chatting";
+			sourceTree = "<group>";
+		};
+		7BA089D6235F260600377A65 /* [02-01] Category */ = {
+			isa = PBXGroup;
+			children = (
+				7BA089D7235F262D00377A65 /* CategoryView.swift */,
+			);
+			path = "[02-01] Category";
 			sourceTree = "<group>";
 		};
 		7BDDD6AA235DDF6C003E369C /* View */ = {
@@ -264,6 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA089D2235E17ED00377A65 /* NanumSquareOTF_acB.otf in Resources */,
+				7BA089D3235E17ED00377A65 /* NanumSquareOTF_acEB.otf in Resources */,
+				7BA089D4235E17ED00377A65 /* NanumSquareOTF_acL.otf in Resources */,
+				7BA089D5235E17ED00377A65 /* NanumSquareOTF_acR.otf in Resources */,
 				CE2DC641235442BD00A5CD9E /* LaunchScreen.storyboard in Resources */,
 				CE2DC63E235442BD00A5CD9E /* Assets.xcassets in Resources */,
 				CE2DC63C235442BC00A5CD9E /* Main.storyboard in Resources */,
@@ -300,9 +333,12 @@
 			files = (
 				7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */,
 				CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */,
+				7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */,
+				7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */,
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,
 				7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */,
 				7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */,
+				7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
