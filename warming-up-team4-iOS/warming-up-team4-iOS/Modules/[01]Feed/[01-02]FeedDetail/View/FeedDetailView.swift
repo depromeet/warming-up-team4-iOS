@@ -59,7 +59,7 @@ extension FeedDetailView {
                     .foregroundColor(Color("app_point_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 17))
                 Text("베드트레이 교환원해요.")
-                    .font(Font.custom("NanumSquareOTF_acR", size: 34))
+                    .font(Font.custom("NanumSquareOTF_acEB", size: 34))
                 Text("2019.10.16")
                     .foregroundColor(Color("app_list_cotent_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 17))
@@ -94,7 +94,7 @@ extension FeedDetailView {
                         
                     }
                 }.frame(height: 180, alignment: .topLeading)
-            }.padding(.top,-40)
+            }.padding(.top,-50)
         }.frame( alignment: .bottomTrailing)
             .padding(.leading, 40)
            
@@ -121,7 +121,6 @@ struct AnotherItemView: View {
         }.frame(width: 130, height:  180)
             .frame(alignment: .topLeading)
     }
-    
 }
 struct FeedDetailView_Previews: PreviewProvider {
     static var previews: some View {

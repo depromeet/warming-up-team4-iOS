@@ -13,14 +13,13 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let feed = UIHostingController(rootView: FeedView())
-               //mainTabBarController.addChild(feed)
+        let category = UIHostingController(rootView: CategoryView())
         
-        //let firstViewController = firstVC()
-                
         feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        category.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
 
        
-        let tabBarList = [feed]
+        let tabBarList = [feed,category]
 
         viewControllers = tabBarList
         // Do any additional setup after loading the view.
