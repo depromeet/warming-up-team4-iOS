@@ -12,7 +12,7 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let feed = UIHostingController(rootView: FeedView())
+        let feed = UIHostingController(rootView: FeedView(tabbarController: self))
         let category = UIHostingController(rootView: CategoryView())
         
         feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)

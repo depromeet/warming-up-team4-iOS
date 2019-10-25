@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F75AB792362BDCA00282D41 /* NanumSquareOTF_acL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB752362BDCA00282D41 /* NanumSquareOTF_acL.otf */; };
+		2F75AB7A2362BDCA00282D41 /* NanumSquareOTF_acR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB762362BDCA00282D41 /* NanumSquareOTF_acR.otf */; };
+		2F75AB7B2362BDCA00282D41 /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */; };
+		2F75AB7C2362BDCA00282D41 /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */; };
 		4C24183215FC7A7D4F5B4075 /* Pods_warming_up_team4_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */; };
 		7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27AF7C235F2999004A771A /* LargeTitleView.swift */; };
 		7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */; };
-		7BA089D2235E17ED00377A65 /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */; };
-		7BA089D3235E17ED00377A65 /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */; };
-		7BA089D4235E17ED00377A65 /* NanumSquareOTF_acL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */; };
-		7BA089D5235E17ED00377A65 /* NanumSquareOTF_acR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */; };
 		7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D7235F262D00377A65 /* CategoryView.swift */; };
 		7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D9235F272E00377A65 /* AppNavigationView.swift */; };
 		7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AB235DDF83003E369C /* FeedView.swift */; };
@@ -26,14 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F75AB752362BDCA00282D41 /* NanumSquareOTF_acL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acL.otf; sourceTree = "<group>"; };
+		2F75AB762362BDCA00282D41 /* NanumSquareOTF_acR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acR.otf; sourceTree = "<group>"; };
+		2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
+		2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_warming_up_team4_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7B27AF7C235F2999004A771A /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acEB.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
-		7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acR.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acR.otf; sourceTree = "<group>"; };
-		7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acL.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acL.otf; sourceTree = "<group>"; };
-		7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acB.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		7BA089D7235F262D00377A65 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		7BA089D9235F272E00377A65 /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
 		7BDDD6AB235DDF83003E369C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -66,13 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				CE2DC63A235442BC00A5CD9E /* Main.storyboard */,
+				2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */,
+				2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */,
+				2F75AB752362BDCA00282D41 /* NanumSquareOTF_acL.otf */,
+				2F75AB762362BDCA00282D41 /* NanumSquareOTF_acR.otf */,
 				CE2DC63D235442BD00A5CD9E /* Assets.xcassets */,
 				CE2DC63F235442BD00A5CD9E /* LaunchScreen.storyboard */,
 				CE2DC642235442BD00A5CD9E /* Info.plist */,
-				7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */,
-				7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */,
-				7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */,
-				7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */,
 			);
 			path = SupportingFIles;
 			sourceTree = "<group>";
@@ -293,13 +293,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA089D2235E17ED00377A65 /* NanumSquareOTF_acB.otf in Resources */,
-				7BA089D3235E17ED00377A65 /* NanumSquareOTF_acEB.otf in Resources */,
-				7BA089D4235E17ED00377A65 /* NanumSquareOTF_acL.otf in Resources */,
-				7BA089D5235E17ED00377A65 /* NanumSquareOTF_acR.otf in Resources */,
 				CE2DC641235442BD00A5CD9E /* LaunchScreen.storyboard in Resources */,
+				2F75AB7A2362BDCA00282D41 /* NanumSquareOTF_acR.otf in Resources */,
+				2F75AB792362BDCA00282D41 /* NanumSquareOTF_acL.otf in Resources */,
 				CE2DC63E235442BD00A5CD9E /* Assets.xcassets in Resources */,
 				CE2DC63C235442BC00A5CD9E /* Main.storyboard in Resources */,
+				2F75AB7C2362BDCA00282D41 /* NanumSquareOTF_acB.otf in Resources */,
+				2F75AB7B2362BDCA00282D41 /* NanumSquareOTF_acEB.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
