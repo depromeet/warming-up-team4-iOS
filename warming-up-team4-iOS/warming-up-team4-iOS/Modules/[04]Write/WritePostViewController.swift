@@ -49,8 +49,8 @@ final class WritePostViewController: UIViewController {
 
     private let inputChangePlaceView = InputChangePlaceView()
 
-    private let categoriesCollectionView = SelectCategoryCollectionView(frame: .infinite, collectionViewLayout: UICollectionViewFlowLayout()).then {
-        $0.isScrollEnabled = false
+    private let categoriesCollectionView = SelectCategoryCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
+        $0.isScrollEnabled = true
     }
 
     override func viewDidLoad() {
@@ -87,6 +87,16 @@ final class WritePostViewController: UIViewController {
         categoriesCollectionView.delegate = self
         categoriesCollectionView.dataSource = self
         categoriesCollectionView.register(PostCategoryCell.self, forCellWithReuseIdentifier: cellID)
+
+        categoriesCollectionView.snp.makeConstraints {
+            $0.width.equalToSuperview()
+            $0.height.greaterThanOrEqualTo(500)
+        }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        categoriesCollectionView.reloadData()
     }
 
     override func viewDidLayoutSubviews() {
@@ -97,7 +107,7 @@ final class WritePostViewController: UIViewController {
 
 extension WritePostViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 100
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -108,9 +118,5 @@ extension WritePostViewController: UICollectionViewDelegate, UICollectionViewDat
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 60, height: 60)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 100, left: 100, bottom: 100, right: 100)
     }
 }

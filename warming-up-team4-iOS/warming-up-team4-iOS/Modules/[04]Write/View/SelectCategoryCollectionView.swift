@@ -16,7 +16,7 @@ private let cellID = "postCategoryCellID"
 final class SelectCategoryCollectionView: UICollectionView {
 
     private func setupView() {
-        register(PostCategoryCell.self, forCellWithReuseIdentifier: cellID)
+        backgroundColor = .clear
     }
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -32,10 +32,6 @@ final class SelectCategoryCollectionView: UICollectionView {
 }
 
 final class PostCategoryCell: UICollectionViewCell {
-
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 60, height: 60)
-    }
 
     private lazy var stackView = UIStackView(arrangedSubviews: [self.imageView,
                                                                 self.categoryLabel]).then {
