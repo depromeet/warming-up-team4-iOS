@@ -19,7 +19,7 @@ struct AppNavigationView: View {
                 Text("share")
             }.frame(alignment: .trailing)
             
-        }
+        }.padding(.top,0)
             
         .frame(height: 50)
     }

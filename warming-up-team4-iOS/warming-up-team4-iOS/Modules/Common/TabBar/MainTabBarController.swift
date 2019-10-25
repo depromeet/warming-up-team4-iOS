@@ -20,7 +20,7 @@ class MainTabBarController: UITabBarController {
 
        
         let tabBarList = [feed,category]
-
+        self.hidesBottomBarWhenPushed = true
         viewControllers = tabBarList
         // Do any additional setup after loading the view.
     }
@@ -36,4 +36,10 @@ class MainTabBarController: UITabBarController {
     }
     */
 
+}
+extension UINavigationController {
+    override open func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        topViewController?.hidesBottomBarWhenPushed = true
+    }
 }

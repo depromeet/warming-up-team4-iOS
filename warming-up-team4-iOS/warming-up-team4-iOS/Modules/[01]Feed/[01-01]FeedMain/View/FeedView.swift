@@ -16,25 +16,51 @@ struct FeedView: View {
     let height: CGFloat = 100.0
     var body: some View {
 
-       NavigationView {
-           VStack {
+     //  NavigationView {
+        
+           VStack() {
             
-            AppNavigationView()
+           navi
+            .padding(.top)
+            .frame(alignment: .topLeading)
+                .frame(height: 50)
             content
        
-        }.navigationBarTitle(Text("Title")) // Add this line
+           }.frame(alignment: .topLeading)
+            .padding(.top, 0)
+            .padding(.leading, 10)
+        .padding(.trailing,0)
+        .navigationBarTitle(Text("Title")) // Add this line
         .navigationBarHidden(true)
         
-        }
+      //  }
+    }
+    
+    var navi: some View {
+        HStack (alignment: .top) {
+                   Spacer()
+                   Button(action: {}) {
+                       Text("close")
+                   }
+                   Button(action: {}) {
+                       Text("share")
+                   }.frame(alignment: .trailing)
+                   
+        }.padding(.top,0)
+                   
+               .frame(height: 50)
     }
     var content: some View {
+    
         List {
             //ScrollView {
             
             
             LargeTitleView()
             ForEach(users, id:  \.self) { user in
+                        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
                 FeedCellView()
+                }
             }
         }
     }
@@ -43,7 +69,7 @@ struct FeedView: View {
 
 struct FeedCellView: View {
     var body: some View {
-        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
+//        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
             VStack(alignment: .leading, spacing: 6) {
                 Image("feed_image")
                     .resizable()
@@ -60,10 +86,11 @@ struct FeedCellView: View {
                     .font(Font.custom("NanumSquareOTF_acR", size: 14))
                 
                 
-            }.padding(.leading, 20)
+            }.padding(.leading, 10)
             .padding(.bottom, 20)
                 .padding(.trailing, -20)
-        }
+        .edgesIgnoringSafeArea(.trailing)
+       // }
         
             
         
