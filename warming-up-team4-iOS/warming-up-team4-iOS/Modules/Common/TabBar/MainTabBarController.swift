@@ -8,18 +8,24 @@
 
 import UIKit
 import SwiftUI
+
+import Then
+
 class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let feed = UIHostingController(rootView: FeedView(tabbarController: self))
         let category = UIHostingController(rootView: CategoryView())
+
+        let navWriteVC = UINavigationController(rootViewController: WritePostViewController()).then {
+            $0.tabBarItem = UITabBarItem(title: "글쓰기", image: nil, selectedImage: nil)
+        }
         
         feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         category.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-
        
-        let tabBarList = [feed,category]
+        let tabBarList = [navWriteVC, feed, category]
 
         viewControllers = tabBarList
         // Do any additional setup after loading the view.
