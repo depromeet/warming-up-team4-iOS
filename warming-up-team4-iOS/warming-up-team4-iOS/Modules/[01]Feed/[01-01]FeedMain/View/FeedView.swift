@@ -12,6 +12,7 @@ import Combine
 
 
 struct FeedView: View {
+    var tabbarController: MainTabBarController
     @State var users = ["Munon", "Gomin", "Durup"]
     let height: CGFloat = 100.0
     var body: some View {
@@ -34,7 +35,7 @@ struct FeedView: View {
             
             LargeTitleView()
             ForEach(users, id:  \.self) { user in
-                FeedCellView()
+                FeedCellView(tabBarController: self.tabbarController)
             }
         }
     }
@@ -42,8 +43,11 @@ struct FeedView: View {
 //.font(Font.custom("Montserrat-Bold", size: 60.0))
 
 struct FeedCellView: View {
+    var tabBarController: MainTabBarController
     var body: some View {
-        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
+        NavigationLink(destination: FeedDetailView(tabbarController: self.tabBarController, dismissParent: {
+            self.tabBarController.tabBar.isHidden = false
+        })) {
             VStack(alignment: .leading, spacing: 6) {
                 Image("feed_image")
                     .resizable()
@@ -72,7 +76,7 @@ struct FeedCellView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        FeedView(tabbarController: MainTabBarController())
     }
 }
 
