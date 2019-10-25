@@ -9,13 +9,14 @@
 import SwiftUI
 
 struct FeedDetailView: View {
-    var tabbarController: MainTabBarController
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
 
     @State var dismissParent: () -> Void
     var body: some View {
-        VStack() {
+    
+        VStack(alignment: .center,spacing: 0) {
+            
             topBar
             contentView
             divider
@@ -33,6 +34,13 @@ struct FeedDetailView: View {
     func popParent() {
         presentationMode.wrappedValue.dismiss()
         DispatchQueue.main.asyncAfter(deadline: .now()) { self.dismissParent() }
+    }
+    
+    var divider: some View {
+      Rectangle()
+          .fill(Color("app_list_cotent_color"))
+        .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 1)
+        .blur(radius: 1.0)
     }
 }
 
@@ -52,14 +60,14 @@ extension FeedDetailView {
         }
         .padding(.leading, 20)
         .padding(.trailing, 20)
-        .frame(height: 60)
+        .frame(height: 30)
     }
-    var divider: some View {
-          Rectangle()
-              .fill(Color("app_list_cotent_color"))
-            .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 1)
-            .blur(radius: 1.0)
-        }
+//    var divider: some View {
+//          Rectangle()
+//              .fill(Color("app_list_cotent_color"))
+//            .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 1)
+//            .blur(radius: 1.0)
+//        }
     
     var bottomBar: some View {
         HStack{
@@ -95,16 +103,21 @@ extension FeedDetailView {
                     .foregroundColor(Color("app_point_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 17))
                 Text("베드트레이 교환원해요.")
+                    .lineLimit(Int.max)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .layoutPriority(1000)
                     .font(Font.custom("NanumSquareOTF_acEB", size: 34))
                 Text("2019.10.16")
                     .foregroundColor(Color("app_list_cotent_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 17))
                 Text("치즈랑 매운맛 있어요.\n귀찮을떄 요리해먹기 딱이에요.\n보관도 뚜껑만 잘 닫아주면 돼요!\n다른 식품도 다 받으니까 편하게 신청해주세요~~~")
                     .foregroundColor(Color("app_content_color"))
-                .font(Font.custom("NanumSquareOTF_acR", size: 17))
+                .font(Font.custom("NanumSquareOTF_acR", size: 16))
                     .lineLimit(Int.max)
+                    .fixedSize(horizontal: false, vertical: true)
                 .lineSpacing(5)
-                
+                    .layoutPriority(1000)
+                    
                 HStack {
                     Text("by")
                     Image("feed_image")
@@ -117,8 +130,12 @@ extension FeedDetailView {
                     Text("성사율80%")
                     .foregroundColor(Color("app_point_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 14))
-                }
-
+                }.padding(.top,10)
+                .padding(.bottom,10)
+                Text("대학생님의 다른 물건")
+                .font(Font.custom("NanumSquareOTF_acR", size: 18))
+                .padding(.top,10)
+                .padding(.bottom,15)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         AnotherItemView()
@@ -131,8 +148,9 @@ extension FeedDetailView {
                     }
                 }.frame(height: 180, alignment: .topLeading)
             }.padding(.top,-50)
-        }.frame( alignment: .bottomTrailing)
+        }
             .padding(.leading, 40)
+    
            
     }
 }
@@ -160,6 +178,6 @@ struct AnotherItemView: View {
 }
 struct FeedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedDetailView(tabbarController: MainTabBarController(), dismissParent: {})
+        FeedDetailView(dismissParent: {})
     }
 }

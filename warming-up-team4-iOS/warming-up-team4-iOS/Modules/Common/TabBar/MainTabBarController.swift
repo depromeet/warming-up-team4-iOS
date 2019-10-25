@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let feed = UIHostingController(rootView: FeedView(tabbarController: self))
+        let feed = UIHostingController(rootView: FeedView())
         let category = UIHostingController(rootView: CategoryView())
 
         feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
@@ -29,8 +29,8 @@ class MainTabBarController: UITabBarController {
           $0.tabBarItem = .init(title: "내정보", image: .iconTabMy, tag: 3)
         }
        
-        let tabBarList = [feed, category, writeVC, myPageVC]
-
+        let tabBarList = [feed,category,writeVC,myPageVC]
+        self.hidesBottomBarWhenPushed = true
         viewControllers = tabBarList
         // Do any additional setup after loading the view.
 
@@ -38,4 +38,10 @@ class MainTabBarController: UITabBarController {
 
     }
 
+}
+extension UINavigationController {
+    override open func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        topViewController?.hidesBottomBarWhenPushed = true
+    }
 }

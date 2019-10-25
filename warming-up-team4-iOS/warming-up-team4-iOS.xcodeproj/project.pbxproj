@@ -12,12 +12,17 @@
 		2F75AB7B2362BDCA00282D41 /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */; };
 		2F75AB7C2362BDCA00282D41 /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */; };
 		4C24183215FC7A7D4F5B4075 /* Pods_warming_up_team4_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */; };
+		7B12B32F2361D607001407A2 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B32C2361D606001407A2 /* BottomBar.swift */; };
+		7B12B3302361D607001407A2 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B32D2361D606001407A2 /* BottomBarItem.swift */; };
+		7B12B3312361D607001407A2 /* BottomBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B32E2361D607001407A2 /* BottomBarItemView.swift */; };
+		7B12B3332361D851001407A2 /* HomeTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B3322361D851001407A2 /* HomeTabbedView.swift */; };
 		7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27AF7C235F2999004A771A /* LargeTitleView.swift */; };
 		7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */; };
 		7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D7235F262D00377A65 /* CategoryView.swift */; };
 		7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D9235F272E00377A65 /* AppNavigationView.swift */; };
 		7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AB235DDF83003E369C /* FeedView.swift */; };
 		7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */; };
+		7BF20F722361FE39007C93DC /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF20F712361FE39007C93DC /* CategoryDetailView.swift */; };
 		CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC634235442BC00A5CD9E /* AppDelegate.swift */; };
 		CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC636235442BC00A5CD9E /* SceneDelegate.swift */; };
 		CE2DC63C235442BC00A5CD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DC63A235442BC00A5CD9E /* Main.storyboard */; };
@@ -56,12 +61,17 @@
 		2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_warming_up_team4_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B12B32C2361D606001407A2 /* BottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		7B12B32D2361D606001407A2 /* BottomBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
+		7B12B32E2361D607001407A2 /* BottomBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItemView.swift; sourceTree = "<group>"; };
+		7B12B3322361D851001407A2 /* HomeTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbedView.swift; sourceTree = "<group>"; };
 		7B27AF7C235F2999004A771A /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7BA089D7235F262D00377A65 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		7BA089D9235F272E00377A65 /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
 		7BDDD6AB235DDF83003E369C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
+		7BF20F712361FE39007C93DC /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2DC631235442BC00A5CD9E /* warming-up-team4-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "warming-up-team4-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2DC634235442BC00A5CD9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +157,7 @@
 				CEAF4D3423630A500009E3DA /* Extension */,
 				7BA089D9235F272E00377A65 /* AppNavigationView.swift */,
 				7B27AF7C235F2999004A771A /* LargeTitleView.swift */,
+				7B12B3322361D851001407A2 /* HomeTabbedView.swift */,
 				7B4EBFB1235A282300B12536 /* TabBar */,
 				E68F8610236ED44E00C879C8 /* Constants.swift */,
 			);
@@ -215,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				7BA089D7235F262D00377A65 /* CategoryView.swift */,
+				7BF20F712361FE39007C93DC /* CategoryDetailView.swift */,
 			);
 			path = "[02-01] Category";
 			sourceTree = "<group>";
@@ -223,6 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				7BDDD6AB235DDF83003E369C /* FeedView.swift */,
+				7B12B32C2361D606001407A2 /* BottomBar.swift */,
+				7B12B32D2361D606001407A2 /* BottomBarItem.swift */,
+				7B12B32E2361D607001407A2 /* BottomBarItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -514,7 +529,11 @@
 				CE92D2832369A419005130DD /* InputHashtagView.swift in Sources */,
 				CE35B84C2362FD1C006A1B92 /* WritePostViewController.swift in Sources */,
 				7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */,
+				7B12B3332361D851001407A2 /* HomeTabbedView.swift in Sources */,
 				CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */,
+				7B12B3312361D607001407A2 /* BottomBarItemView.swift in Sources */,
+				7B12B32F2361D607001407A2 /* BottomBar.swift in Sources */,
+				7B12B3302361D607001407A2 /* BottomBarItem.swift in Sources */,
 				7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */,
 				CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */,
 				CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */,
@@ -534,6 +553,7 @@
 				CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */,
 				CE92D2BC2371B8F5005130DD /* R.generated.swift in Sources */,
 				7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */,
+				7BF20F722361FE39007C93DC /* CategoryDetailView.swift in Sources */,
 				CE92D2A92371A02F005130DD /* BoxedButton.swift in Sources */,
 				CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */,
 				CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */,
