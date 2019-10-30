@@ -68,3 +68,4 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 warming-up-team4-iOS/warming-up-team4-iOS.xcworkspace/xcshareddata/
+.DS_Store

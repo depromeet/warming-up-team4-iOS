@@ -1,8 +1,8 @@
 //
-//  InputChangePlaceView.swift
+//  InputHashtagView.swift
 //  warming-up-team4-iOS
 //
-//  Created by user on 2019/10/25.
+//  Created by user on 2019/10/30.
 //  Copyright © 2019 user. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import SnapKit
 import Then
 import UITextView_Placeholder
 
-final class InputChangePlaceView: UIView {
+final class InputHashtagView: UIView {
 
     var inputText: String {
         return textView.text ?? ""
@@ -25,12 +25,12 @@ final class InputChangePlaceView: UIView {
     }
 
     private let titleLabel = UILabel().then {
-        $0.text = "교환 장소"
+        $0.text = "#해시태그"
         $0.font = .preferredFont(forTextStyle: .headline)
     }
 
     private let textView = UITextView().then {
-        $0.placeholder = "교환을 원하는 장소를 입력해주세요"
+        $0.placeholder = "#입력하기"
         $0.font = .preferredFont(forTextStyle: .footnote)
         $0.textContainer.lineFragmentPadding = 0
         $0.textContainerInset = .zero
@@ -58,3 +58,5 @@ final class InputChangePlaceView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+

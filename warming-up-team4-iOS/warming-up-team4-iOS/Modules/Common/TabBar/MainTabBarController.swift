@@ -18,28 +18,21 @@ class MainTabBarController: UITabBarController {
         let feed = UIHostingController(rootView: FeedView(tabbarController: self))
         let category = UIHostingController(rootView: CategoryView())
 
-        let navWriteVC = UINavigationController(rootViewController: WritePostViewController()).then {
-            $0.tabBarItem = UITabBarItem(title: "글쓰기", image: nil, selectedImage: nil)
+        let writeVC = WritePostViewController().then {
+            $0.tabBarItem = .init(title: "글쓰기", image: .iconTabEdit, tag: 2)
         }
         
         feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         category.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
        
-        let tabBarList = [navWriteVC, feed, category]
+        let tabBarList = [feed, category, writeVC]
 
         viewControllers = tabBarList
         // Do any additional setup after loading the view.
-    }
-    
 
-    /*
-    // MARK: - Navigation
+        delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
     }
-    */
 
 }

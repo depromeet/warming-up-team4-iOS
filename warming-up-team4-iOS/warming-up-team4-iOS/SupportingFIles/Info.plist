@@ -39,6 +39,10 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>물품을 설명하기 위한 사진 첨부를 위해 카메라 권한을 요청합니다</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>물품을 설명하기 위한 사진 첨부를 위해 사진첩 권한을 요청합니다</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

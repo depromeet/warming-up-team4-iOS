@@ -12,62 +12,95 @@ import SnapKit
 import Then
 
 private let cellID = "postCategoryCellID"
+private let leftInset: CGFloat = 32
+private let rightInset: CGFloat = 20
+
 final class WritePostViewController: UIViewController {
 
     private let scrollView = UIScrollView().then {
-        $0.backgroundColor = .systemOrange
+        $0.keyboardDismissMode = .onDrag
     }
 
     private lazy var verticalStackView = UIStackView(arrangedSubviews: [self.titleTextField,
                                                                         self.descriptTextView,
+                                                                        self.imageSelectView,
                                                                         self.inputChangePlaceView,
-                                                                        self.categoriesCollectionView
+                                                                        self.selectCategoryView,
+                                                                        self.inputHashtagView
     ]).then {
         $0.axis = .vertical
         $0.spacing = 16
-        $0.backgroundColor = .systemTeal
     }
 
+    // 제목
     private let titleTextField = UITextField().then {
         $0.placeholder = "제목을 입력해주세요"
         $0.font = .preferredFont(forTextStyle: .title1)
-        $0.backgroundColor = .systemGray
         $0.snp.makeConstraints {
             $0.height.equalTo(30)
         }
     }
 
+    // 설명
     private let descriptTextView = UITextView().then {
-        $0.text = "어떤 물품인지 설명해주세요"
+        $0.placeholder = "어떤 물품인지 설명해주세요"
         $0.font = .preferredFont(forTextStyle: .footnote)
-        $0.backgroundColor = .systemPink
         $0.isScrollEnabled = false
+        $0.textContainer.lineFragmentPadding = 0
+        $0.textContainerInset = .zero
         $0.snp.makeConstraints {
             $0.height.greaterThanOrEqualTo(80)
         }
     }
 
+    // 사진 선택
+    private lazy var imageSelectView = ImageMultipleSelectView(in: self)
+
+    // 교환 장소
     private let inputChangePlaceView = InputChangePlaceView()
 
-    private let categoriesCollectionView = SelectCategoryCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
-        $0.isScrollEnabled = true
+    // 카테고리 선택
+    private let selectCategoryView = SelectCategoryView()
+
+    // 해시태그
+    private let inputHashtagView = InputHashtagView()
+
+    // deco
+    private let titleUnderlineView = UIView().then {
+        $0.backgroundColor = .black
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupViews()
+        setupNavBar()
+    }
 
-        for _ in 1 ..< 100 {
-            let vw = UIButton(type: .system)
-            vw.setTitle("Button", for: .normal)
-            verticalStackView.addArrangedSubview(vw)
+    private func setupNavBar() {
+        title = "내 물품 등록하기"
+
+        navigationController?.navigationBar.do {
+            $0.isTranslucent = false
+            $0.shadowImage = UIImage()
         }
+
+        let closeBarButton = UIBarButtonItem(image: .iconClose, style: .plain, target: self, action: #selector(didTapClose))
+        let acceptBarButton = UIBarButtonItem(image: .iconAccept, style: .plain, target: self, action: #selector(didTapAccept))
+        navigationItem.leftBarButtonItem = closeBarButton
+        navigationItem.rightBarButtonItem = acceptBarButton
+    }
+
+    @objc private func didTapClose() {
+        dismiss(animated: true, completion: nil)
+    }
+
+    @objc private func didTapAccept() {
+        print("didTapAccept")
     }
 
     private func setupViews() {
-        title = "내 물품 등록하기"
-
+        view.backgroundColor = .systemBackground
         view.addSubview(scrollView)
 
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -79,44 +112,21 @@ final class WritePostViewController: UIViewController {
         scrollView.addSubview(verticalStackView)
 
         verticalStackView.snp.makeConstraints {
-            $0.top.bottom.equalTo(self.scrollView).inset(32)
-            $0.left.equalTo(view).offset(32)
-            $0.right.equalTo(view).offset(-20)
-            $0.width.equalTo(self.scrollView)
+            $0.top.equalToSuperview().inset(32)
+            $0.left.equalTo(view.safeAreaLayoutGuide).offset(leftInset)
+            $0.right.equalTo(view.safeAreaLayoutGuide).offset(-rightInset)
+            $0.bottom.equalToSuperview().inset(200)
+
         }
-        categoriesCollectionView.delegate = self
-        categoriesCollectionView.dataSource = self
-        categoriesCollectionView.register(PostCategoryCell.self, forCellWithReuseIdentifier: cellID)
 
-        categoriesCollectionView.snp.makeConstraints {
-            $0.width.equalToSuperview()
-            $0.height.greaterThanOrEqualTo(500)
+        titleTextField.addSubview(titleUnderlineView)
+        titleUnderlineView.snp.makeConstraints {
+            $0.top.equalTo(titleTextField.snp.bottom)
+            $0.left.equalTo(titleTextField)
+            $0.right.equalTo(view)
+            $0.height.equalTo(1)
         }
+
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        categoriesCollectionView.reloadData()
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        scrollView.contentSize = CGSize(width: verticalStackView.frame.width, height: verticalStackView.frame.height)
-    }
-}
-
-extension WritePostViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
-        cell.backgroundColor = .red
-        return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 60, height: 60)
-    }
 }

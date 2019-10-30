@@ -32,6 +32,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
 
+extension AppDelegate: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController is WritePostViewController {
+            let navVC = UINavigationController(rootViewController: WritePostViewController())
+            tabBarController.present(navVC, animated: true, completion: nil)
+            return false
+        }
+
+        return true
+    }
+}
