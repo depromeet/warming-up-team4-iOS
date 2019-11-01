@@ -18,7 +18,7 @@ private let rightInset: CGFloat = 20
 final class WritePostViewController: UIViewController {
 
     private let scrollView = UIScrollView().then {
-        $0.keyboardDismissMode = .onDrag
+        $0.keyboardDismissMode = .interactive
     }
 
     private lazy var verticalStackView = UIStackView(arrangedSubviews: [self.titleTextField,
@@ -103,8 +103,6 @@ final class WritePostViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(scrollView)
 
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-
         scrollView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
@@ -116,7 +114,6 @@ final class WritePostViewController: UIViewController {
             $0.left.equalTo(view.safeAreaLayoutGuide).offset(leftInset)
             $0.right.equalTo(view.safeAreaLayoutGuide).offset(-rightInset)
             $0.bottom.equalToSuperview().inset(200)
-
         }
 
         titleTextField.addSubview(titleUnderlineView)

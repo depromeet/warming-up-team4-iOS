@@ -28,6 +28,9 @@
 		CE92D2832369A419005130DD /* InputHashtagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2822369A419005130DD /* InputHashtagView.swift */; };
 		CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2842369B9E5005130DD /* UIImage+Asset.swift */; };
 		CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2862369C19D005130DD /* SelectCategoryView.swift */; };
+		CE92D28D236C2D17005130DD /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D28C236C2D17005130DD /* MyPageViewController.swift */; };
+		CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */; };
+		CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D291236C379F005130DD /* ProfileInfoView.swift */; };
 		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
 		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		CE92D2822369A419005130DD /* InputHashtagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputHashtagView.swift; sourceTree = "<group>"; };
 		CE92D2842369B9E5005130DD /* UIImage+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Asset.swift"; sourceTree = "<group>"; };
 		CE92D2862369C19D005130DD /* SelectCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryView.swift; sourceTree = "<group>"; };
+		CE92D28C236C2D17005130DD /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTitleLabel.swift; sourceTree = "<group>"; };
+		CE92D291236C379F005130DD /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangePlaceView.swift; sourceTree = "<group>"; };
 		CEAF4D3523630A5D0009E3DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		F5408FDEFA6D44E2100F28E5 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 		7B4EBFAC235A1C1300B12536 /* [05]My */ = {
 			isa = PBXGroup;
 			children = (
+				CE92D28C236C2D17005130DD /* MyPageViewController.swift */,
+				CE92D28E236C32A7005130DD /* View */,
 			);
 			path = "[05]My";
 			sourceTree = "<group>";
@@ -246,6 +254,15 @@
 				CE4A20292369964B00900A71 /* ImageMultipleSelectView.swift */,
 			);
 			path = "Image Select";
+			sourceTree = "<group>";
+		};
+		CE92D28E236C32A7005130DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */,
+				CE92D291236C379F005130DD /* ProfileInfoView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CEAF4D312363094E0009E3DA /* View */ = {
@@ -394,13 +411,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */,
 				CE92D2832369A419005130DD /* InputHashtagView.swift in Sources */,
 				CE35B84C2362FD1C006A1B92 /* WritePostViewController.swift in Sources */,
 				7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */,
 				CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */,
 				7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */,
+				CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */,
 				CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */,
 				7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */,
+				CE92D28D236C2D17005130DD /* MyPageViewController.swift in Sources */,
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,
 				7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */,
 				CE4A202A2369964B00900A71 /* ImageMultipleSelectView.swift in Sources */,
