@@ -6,5 +6,9 @@ target 'warming-up-team4-iOS' do
   use_frameworks!
 
   # Pods for warming-up-team4-iOS
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Then'
+  pod 'UITextView+Placeholder'
+  pod 'YPImagePicker' # Multiple Image Picker
 
 end

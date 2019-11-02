@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,13 @@
 		CE2DC63C235442BC00A5CD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DC63A235442BC00A5CD9E /* Main.storyboard */; };
 		CE2DC63E235442BD00A5CD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2DC63D235442BD00A5CD9E /* Assets.xcassets */; };
 		CE2DC641235442BD00A5CD9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DC63F235442BD00A5CD9E /* LaunchScreen.storyboard */; };
+		CE35B84C2362FD1C006A1B92 /* WritePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35B84B2362FD1C006A1B92 /* WritePostViewController.swift */; };
+		CE4A202A2369964B00900A71 /* ImageMultipleSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A20292369964B00900A71 /* ImageMultipleSelectView.swift */; };
+		CE92D2832369A419005130DD /* InputHashtagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2822369A419005130DD /* InputHashtagView.swift */; };
+		CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2842369B9E5005130DD /* UIImage+Asset.swift */; };
+		CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2862369C19D005130DD /* SelectCategoryView.swift */; };
+		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
+		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,13 @@
 		CE2DC63D235442BD00A5CD9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2DC640235442BD00A5CD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2DC642235442BD00A5CD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE35B84B2362FD1C006A1B92 /* WritePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostViewController.swift; sourceTree = "<group>"; };
+		CE4A20292369964B00900A71 /* ImageMultipleSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMultipleSelectView.swift; sourceTree = "<group>"; };
+		CE92D2822369A419005130DD /* InputHashtagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputHashtagView.swift; sourceTree = "<group>"; };
+		CE92D2842369B9E5005130DD /* UIImage+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Asset.swift"; sourceTree = "<group>"; };
+		CE92D2862369C19D005130DD /* SelectCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryView.swift; sourceTree = "<group>"; };
+		CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangePlaceView.swift; sourceTree = "<group>"; };
+		CEAF4D3523630A5D0009E3DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		F5408FDEFA6D44E2100F28E5 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC5E0E2216FF2ACE5B6FB99 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +107,7 @@
 		7B4EBFAA235A1BD500B12536 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CEAF4D3423630A500009E3DA /* Extension */,
 				7BA089D9235F272E00377A65 /* AppNavigationView.swift */,
 				7B27AF7C235F2999004A771A /* LargeTitleView.swift */,
 				7B4EBFB1235A282300B12536 /* TabBar */,
@@ -119,6 +134,8 @@
 		7B4EBFAD235A1C9B00B12536 /* [04]Write */ = {
 			isa = PBXGroup;
 			children = (
+				CE35B84B2362FD1C006A1B92 /* WritePostViewController.swift */,
+				CEAF4D312363094E0009E3DA /* View */,
 			);
 			path = "[04]Write";
 			sourceTree = "<group>";
@@ -223,6 +240,34 @@
 			path = "warming-up-team4-iOS";
 			sourceTree = "<group>";
 		};
+		CE4A202B2369986F00900A71 /* Image Select */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A20292369964B00900A71 /* ImageMultipleSelectView.swift */,
+			);
+			path = "Image Select";
+			sourceTree = "<group>";
+		};
+		CEAF4D312363094E0009E3DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */,
+				CE92D2822369A419005130DD /* InputHashtagView.swift */,
+				CE92D2862369C19D005130DD /* SelectCategoryView.swift */,
+				CE4A202B2369986F00900A71 /* Image Select */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEAF4D3423630A500009E3DA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF4D3523630A5D0009E3DA /* UIView+.swift */,
+				CE92D2842369B9E5005130DD /* UIImage+Asset.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E2309C6F9EE0982EFD402B08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +290,7 @@
 				CE2DC62D235442BC00A5CD9E /* Sources */,
 				CE2DC62E235442BC00A5CD9E /* Frameworks */,
 				CE2DC62F235442BC00A5CD9E /* Resources */,
+				01FED65EB749D4B5FACE9386 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +352,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01FED65EB749D4B5FACE9386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		69EA80963FDE12ED853DD33A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,14 +394,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE92D2832369A419005130DD /* InputHashtagView.swift in Sources */,
+				CE35B84C2362FD1C006A1B92 /* WritePostViewController.swift in Sources */,
 				7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */,
 				CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */,
 				7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */,
+				CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */,
 				7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */,
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,
 				7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */,
+				CE4A202A2369964B00900A71 /* ImageMultipleSelectView.swift in Sources */,
 				7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */,
+				CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */,
+				CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */,
 				7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */,
+				CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SB46A3BWSY;
+				DEVELOPMENT_TEAM = 827YX997NH;
 				INFOPLIST_FILE = "$(SRCROOT)/warming-up-team4-iOS/SupportingFIles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,7 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SB46A3BWSY;
+				DEVELOPMENT_TEAM = 827YX997NH;
 				INFOPLIST_FILE = "$(SRCROOT)/warming-up-team4-iOS/SupportingFIles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
