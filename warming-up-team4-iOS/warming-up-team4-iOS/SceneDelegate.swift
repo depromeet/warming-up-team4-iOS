@@ -21,11 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         // tabar
-        let navi = UINavigationController()
-        let tab = UIHostingController(rootView: HomeTabbedView())
+//        let navi = UINavigationController()
+//        let tab = UIHostingController(rootView: HomeTabbedView())
         let mainTabBarController = MainTabBarController()
-        navi.viewControllers.append(mainTabBarController) 
-        window?.rootViewController = tab
+//        navi.viewControllers.append(mainTabBarController) 
+        window?.rootViewController = mainTabBarController
         window?.makeKeyAndVisible()
     }
 

@@ -12,6 +12,7 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         let feed = UIHostingController(rootView: FeedView())
         let category = UIHostingController(rootView: CategoryView())
         
@@ -26,7 +27,10 @@ class MainTabBarController: UITabBarController {
     }
     
 
-    /*
+    func setupUI() {
+        self.tabBar.backgroundColor = .white
+    }
+/*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
