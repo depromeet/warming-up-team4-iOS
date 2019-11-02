@@ -10,22 +10,27 @@ import SwiftUI
 
 struct LargeTitleView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text("빵미미")
-                    .foregroundColor(Color("app_point_color"))
-                    .font(Font.custom("NanumSquareOTF_acR", size: 32))
-                Text("님,")
-                    .font(Font.custom("NanumSquareOTF_acR", size: 32))
+        VStack(alignment: .leading, spacing: 15) {
+            VStack(alignment: .leading){
+                HStack {
+                    Text("빵미미")
+                        .foregroundColor(Color("app_point_color"))
+                        .font(Font.custom("NanumSquareOTF_acR", size: 32))
+                    Text("님,")
+                        .font(Font.custom("NanumSquareOTF_acR", size: 32))
+                }
+                Text("오늘 올라온 상품이에요.")
             }
-            Text("오늘 올라온 상품이에요.")
-                .font(Font.custom("NanumSquareOTF_acR", size: 32))
+            .font(Font.custom("NanumSquareOTF_acR", size: 32))
             
             Text("서울대학교")
                 .foregroundColor(Color("app_point_color"))
                 .font(Font.custom("NanumSquareOTF_acR", size: 10))
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topTrailing)
+                
+                
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+            .padding(.bottom, 24)
     }
 }
 

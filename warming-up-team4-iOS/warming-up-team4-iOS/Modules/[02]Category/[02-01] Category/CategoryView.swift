@@ -96,9 +96,10 @@ struct CategoryCelView: View {
                                      .resizable()
                                      .scaledToFit()
                                      Text("여성의류")
+                                  .font(Font.custom("NanumSquareOTF_acR", size: 14)) .foregroundColor(Color("app_category_tile_color"))
                                      
                                  }.padding(.bottom, 10)
-                                 .border(Color("app_list_cotent_color"))
+//                                 .border(Color("app_list_cotent_color"))
                            //      }
             
 //            VStack(spacing: 20) {

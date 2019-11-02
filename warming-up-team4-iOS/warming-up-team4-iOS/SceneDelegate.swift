@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         // tabar
-        let navi = UINavigationController()
-        let tab = UIHostingController(rootView: HomeTabbedView())
+//        let navi = UINavigationController()
+//        let tab = UIHostingController(rootView: HomeTabbedView())
         let mainTabBarController = MainTabBarController()
         window?.rootViewController = mainTabBarController
 //        window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())

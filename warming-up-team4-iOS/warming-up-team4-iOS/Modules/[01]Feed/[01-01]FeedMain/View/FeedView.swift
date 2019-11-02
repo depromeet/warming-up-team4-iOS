@@ -17,24 +17,25 @@ struct FeedView: View {
     let height: CGFloat = 100.0
     var body: some View {
 
-     //  NavigationView {
+       NavigationView {
         
            VStack() {
             
            navi
             .padding(.top)
             .frame(alignment: .topLeading)
-                .frame(height: 50)
+                .frame(height: 60)
             content
        
            }.frame(alignment: .topLeading)
             .padding(.top, 0)
-            .padding(.leading, 10)
+            
+            .padding(.leading, 35)
         .padding(.trailing,0)
         .navigationBarTitle(Text("Title")) // Add this line
         .navigationBarHidden(true)
         
-      //  }
+        }
     }
     
     var navi: some View {
@@ -73,27 +74,34 @@ struct FeedView: View {
 struct FeedCellView: View {
     
     var body: some View {
-        NavigationLink(destination: FeedDetailView(
-            dismissParent: {})) {
+//        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
             VStack(alignment: .leading, spacing: 6) {
                 Image("feed_image")
                     .resizable()
-                    .frame(height: 300)
+                    .frame(height: 294)
                     .clipped()
+                Spacer()
+                    .frame(height: 9)
                 Text("베드트레이 교환 원해요")
-                    .font(Font.custom("NanumSquareOTF_acEB", size: 30))
-                    
-                Text("23명이 교환원해요")
+                    .font(Font.custom("NanumSquareOTF_acB", size: 28))
+                
+                HStack(alignment: .bottom, spacing: 0){
+                    Text("23명")
                     .foregroundColor(Color("app_point_color"))
-                    .font(Font.custom("NanumSquareOTF_acR", size: 14))
+                    .font(Font.custom("NanumSquareOTF_acEB", size: 14))
+                    Text("이 교환원해요")
+                    .foregroundColor(Color("app_point_color"))
+                    .font(Font.custom("NanumSquareOTF_acR", size: 10))
+                }
+                
                 Text("침대에서 정말 사용하기 편해요. 색상도 이쁘고 원목이라..")
                     .foregroundColor(Color("app_list_cotent_color"))
-                    .font(Font.custom("NanumSquareOTF_acR", size: 14))
+                    .font(Font.custom("NanumSquareOTF_acR", size: 12))
                 
                 
-            }.padding(.leading, 10)
-            .padding(.bottom, 20)
-                .padding(.trailing, -20)
+            }.padding(.leading, 0)
+                .padding(.bottom, 20)
+                .padding(.trailing, -35)
         .edgesIgnoringSafeArea(.trailing)
        // }
         
