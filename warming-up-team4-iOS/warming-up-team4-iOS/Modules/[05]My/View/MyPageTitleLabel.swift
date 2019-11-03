@@ -28,4 +28,13 @@ final class MyPageTitleLabel: UILabel {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+  override func drawText(in rect: CGRect) {
+    let inset = UIEdgeInsets(top: 0,
+                             left: Constants.appLeftInset,
+                             bottom: 0,
+                             right: Constants.appLeftInset)
+
+    super.drawText(in: rect.inset(by: inset))
+  }
 }

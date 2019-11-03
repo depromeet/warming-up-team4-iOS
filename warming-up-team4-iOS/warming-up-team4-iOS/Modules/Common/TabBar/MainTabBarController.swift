@@ -26,7 +26,7 @@ class MainTabBarController: UITabBarController {
         }
 
         let myPageVC = UINavigationController(rootViewController: MyPageViewController()).then {
-            $0.tabBarItem = .init(title: "내정보", image: nil, tag: 3)
+          $0.tabBarItem = .init(title: "내정보", image: .iconTabMy, tag: 3)
         }
        
         let tabBarList = [feed, category, writeVC, myPageVC]

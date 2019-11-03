@@ -33,6 +33,10 @@
 		CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D291236C379F005130DD /* ProfileInfoView.swift */; };
 		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
 		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
+		E68F8611236ED44E00C879C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8610236ED44E00C879C8 /* Constants.swift */; };
+		E68F8613236ED6DB00C879C8 /* MyPageItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8612236ED6DB00C879C8 /* MyPageItemsView.swift */; };
+		E68F8616236EDDE700C879C8 /* YSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8615236EDDE700C879C8 /* YSCell.swift */; };
+		E68F8618236EDE8B00C879C8 /* YSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8617236EDE8B00C879C8 /* YSView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		CE92D291236C379F005130DD /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangePlaceView.swift; sourceTree = "<group>"; };
 		CEAF4D3523630A5D0009E3DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		E68F8610236ED44E00C879C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E68F8612236ED6DB00C879C8 /* MyPageItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageItemsView.swift; sourceTree = "<group>"; };
+		E68F8615236EDDE700C879C8 /* YSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSCell.swift; sourceTree = "<group>"; };
+		E68F8617236EDE8B00C879C8 /* YSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSView.swift; sourceTree = "<group>"; };
 		F5408FDEFA6D44E2100F28E5 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC5E0E2216FF2ACE5B6FB99 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,10 +121,12 @@
 		7B4EBFAA235A1BD500B12536 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E68F8614236EDDD400C879C8 /* Base UI */,
 				CEAF4D3423630A500009E3DA /* Extension */,
 				7BA089D9235F272E00377A65 /* AppNavigationView.swift */,
 				7B27AF7C235F2999004A771A /* LargeTitleView.swift */,
 				7B4EBFB1235A282300B12536 /* TabBar */,
+				E68F8610236ED44E00C879C8 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -261,6 +271,7 @@
 			children = (
 				CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */,
 				CE92D291236C379F005130DD /* ProfileInfoView.swift */,
+				E68F8612236ED6DB00C879C8 /* MyPageItemsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +305,15 @@
 				FBC5E0E2216FF2ACE5B6FB99 /* Pods-warming-up-team4-iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E68F8614236EDDD400C879C8 /* Base UI */ = {
+			isa = PBXGroup;
+			children = (
+				E68F8615236EDDE700C879C8 /* YSCell.swift */,
+				E68F8617236EDE8B00C879C8 /* YSView.swift */,
+			);
+			path = "Base UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68F8618236EDE8B00C879C8 /* YSView.swift in Sources */,
+				E68F8616236EDDE700C879C8 /* YSCell.swift in Sources */,
 				CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */,
+				E68F8611236ED44E00C879C8 /* Constants.swift in Sources */,
 				CE92D2832369A419005130DD /* InputHashtagView.swift in Sources */,
 				CE35B84C2362FD1C006A1B92 /* WritePostViewController.swift in Sources */,
 				7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */,
@@ -424,6 +447,7 @@
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,
 				7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */,
 				CE4A202A2369964B00900A71 /* ImageMultipleSelectView.swift in Sources */,
+				E68F8613236ED6DB00C879C8 /* MyPageItemsView.swift in Sources */,
 				7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */,
 				CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */,
 				CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */,

@@ -13,16 +13,20 @@ final class ProfileInfoView: UIView {
 
     private lazy var stackView = UIStackView(arrangedSubviews: [
         self.profileImageButton,
-        self.infoLabel
+        self.infoLabel,
+        self.schoolLabel,
+        self.dealRateLabel
     ]).then {
         $0.axis = .vertical
         $0.spacing = 8
         $0.alignment = .center
+      $0.setCustomSpacing(32, after: self.infoLabel)
     }
 
     private let profileImageButton = UIButton().then {
         $0.backgroundColor = .gray
         $0.layer.cornerRadius = profileImageButtonWidth / 2
+      $0.setImage(.iconCamera, for: .normal)
         $0.snp.makeConstraints {
             $0.size.equalTo(profileImageButtonWidth)
         }
@@ -34,6 +38,16 @@ final class ProfileInfoView: UIView {
         $0.text = "TST기네스\nkrgoodnews@gmail.com"
         $0.numberOfLines = 0
     }
+
+  private let schoolLabel = UILabel().then {
+    $0.font = .preferredFont(forTextStyle: .headline)
+    $0.text = "서울대학교"
+  }
+
+  private let dealRateLabel = UILabel().then {
+    $0.font = .preferredFont(forTextStyle: .footnote)
+    $0.text = "거래 성사율 999%"
+  }
 
     private func setupView() {
         addSubview(stackView)
