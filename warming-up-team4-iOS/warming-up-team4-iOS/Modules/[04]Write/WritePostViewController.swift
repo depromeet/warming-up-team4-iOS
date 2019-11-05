@@ -83,8 +83,8 @@ final class WritePostViewController: UIViewController {
         setCustomFontTitle(text: "내 물품 등록하기")
         setupNavigationUI()
         
-        let closeBarButton = UIBarButtonItem(image: .iconClose, style: .plain, target: self, action: #selector(didTapClose))
-        let acceptBarButton = UIBarButtonItem(image: .iconAccept, style: .plain, target: self, action: #selector(didTapAccept))
+        let closeBarButton = UIBarButtonItem(image: R.image.iconClose(), style: .plain, target: self, action: #selector(didTapClose))
+        let acceptBarButton = UIBarButtonItem(image: R.image.iconAccept(), style: .plain, target: self, action: #selector(didTapAccept))
         navigationItem.leftBarButtonItem = closeBarButton
         navigationItem.rightBarButtonItem = acceptBarButton
     }

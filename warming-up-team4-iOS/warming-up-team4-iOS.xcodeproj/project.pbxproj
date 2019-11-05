@@ -40,6 +40,7 @@
 		CE92D2AF2371A457005130DD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2AE2371A457005130DD /* UIViewController+.swift */; };
 		CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2B02371A5F3005130DD /* YSViewController.swift */; };
 		CE92D2B32371AE01005130DD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2B22371AE01005130DD /* Category.swift */; };
+		CE92D2BC2371B8F5005130DD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2BA2371B8AE005130DD /* R.generated.swift */; };
 		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
 		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
 		E68F8611236ED44E00C879C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8610236ED44E00C879C8 /* Constants.swift */; };
@@ -86,6 +87,7 @@
 		CE92D2AE2371A457005130DD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		CE92D2B02371A5F3005130DD /* YSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSViewController.swift; sourceTree = "<group>"; };
 		CE92D2B22371AE01005130DD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CE92D2BA2371B8AE005130DD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangePlaceView.swift; sourceTree = "<group>"; };
 		CEAF4D3523630A5D0009E3DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		E68F8610236ED44E00C879C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		7B4EBFA8235A1B7800B12536 /* SupportingFIles */ = {
 			isa = PBXGroup;
 			children = (
+				CE92D2B92371B8AE005130DD /* Support */,
 				CE2DC63A235442BC00A5CD9E /* Main.storyboard */,
 				2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */,
 				2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */,
@@ -314,6 +317,14 @@
 			path = "Custom UI";
 			sourceTree = "<group>";
 		};
+		CE92D2B92371B8AE005130DD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CE92D2BA2371B8AE005130DD /* R.generated.swift */,
+			);
+			path = Support;
+			sourceTree = SOURCE_ROOT;
+		};
 		CEAF4D312363094E0009E3DA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +382,7 @@
 				CE2DC62E235442BC00A5CD9E /* Frameworks */,
 				CE2DC62F235442BC00A5CD9E /* Resources */,
 				01FED65EB749D4B5FACE9386 /* [CP] Embed Pods Frameworks */,
+				CE92D2B42371B5B3005130DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -467,6 +479,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CE92D2B42371B5B3005130DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Support/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Support/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -501,6 +532,7 @@
 				CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */,
 				CE92D2AF2371A457005130DD /* UIViewController+.swift in Sources */,
 				CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */,
+				CE92D2BC2371B8F5005130DD /* R.generated.swift in Sources */,
 				7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */,
 				CE92D2A92371A02F005130DD /* BoxedButton.swift in Sources */,
 				CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */,

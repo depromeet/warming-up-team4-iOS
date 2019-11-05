@@ -73,7 +73,8 @@ final class SignUpViewController: YSViewController {
         setupNavigationUI()
         setCustomFontTitle(text: "회원가입")
 
-        let closeBarButton = UIBarButtonItem(image: .iconClose, style: .plain, target: self, action: #selector(didTapClose))
+        let closeBarButton = UIBarButtonItem(image: R.image.iconClose(), style: .plain, target: self, action: #selector(didTapClose))
+
         navigationItem.leftBarButtonItem = closeBarButton
 
         view.addSubview(vStackView)
