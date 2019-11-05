@@ -24,7 +24,7 @@ final class ProfileInfoView: UIView {
     }
 
     private let profileImageButton = UIButton().then {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = .init(white: 222/255.0, alpha: 1)
         $0.layer.cornerRadius = profileImageButtonWidth / 2
       $0.setImage(.iconCamera, for: .normal)
         $0.snp.makeConstraints {
@@ -33,19 +33,22 @@ final class ProfileInfoView: UIView {
     }
 
     private let infoLabel = UILabel().then {
-        $0.font = .preferredFont(forTextStyle: .footnote)
+//        $0.font = .preferredFont(forTextStyle: .footnote)
+        $0.font = .customFont(ofSize: 13, weight: .regular)
         $0.textAlignment = .center
         $0.text = "TST기네스\nkrgoodnews@gmail.com"
         $0.numberOfLines = 0
     }
 
   private let schoolLabel = UILabel().then {
-    $0.font = .preferredFont(forTextStyle: .headline)
+//    $0.font = .preferredFont(forTextStyle: .headline)
+    $0.font = .customFont(ofSize: 18, weight: .extraBold)
     $0.text = "서울대학교"
   }
 
   private let dealRateLabel = UILabel().then {
-    $0.font = .preferredFont(forTextStyle: .footnote)
+//    $0.font = .preferredFont(forTextStyle: .footnote)
+    $0.font = .customFont(ofSize: 13, weight: .bold)
     $0.text = "거래 성사율 999%"
   }
 

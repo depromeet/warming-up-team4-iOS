@@ -26,12 +26,14 @@ final class InputChangePlaceView: UIView {
 
     private let titleLabel = UILabel().then {
         $0.text = "교환 장소"
-        $0.font = .preferredFont(forTextStyle: .headline)
+//        $0.font = .preferredFont(forTextStyle: .headline)
+        $0.font = .customFont(ofSize: 17, weight: .bold)
     }
 
     private let textView = UITextView().then {
         $0.placeholder = "교환을 원하는 장소를 입력해주세요"
-        $0.font = .preferredFont(forTextStyle: .footnote)
+//        $0.font = .preferredFont(forTextStyle: .footnote)
+        $0.font = .customFont(ofSize: 13, weight: .regular)
         $0.textContainer.lineFragmentPadding = 0
         $0.textContainerInset = .zero
         $0.isScrollEnabled = false

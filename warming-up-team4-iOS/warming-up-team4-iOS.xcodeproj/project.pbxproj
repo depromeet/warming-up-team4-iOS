@@ -31,6 +31,7 @@
 		CE92D28D236C2D17005130DD /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D28C236C2D17005130DD /* MyPageViewController.swift */; };
 		CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */; };
 		CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D291236C379F005130DD /* ProfileInfoView.swift */; };
+		CE92D298237187BA005130DD /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D297237187BA005130DD /* UIFont+.swift */; };
 		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
 		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
 		E68F8611236ED44E00C879C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8610236ED44E00C879C8 /* Constants.swift */; };
@@ -68,6 +69,7 @@
 		CE92D28C236C2D17005130DD /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTitleLabel.swift; sourceTree = "<group>"; };
 		CE92D291236C379F005130DD /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
+		CE92D297237187BA005130DD /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangePlaceView.swift; sourceTree = "<group>"; };
 		CEAF4D3523630A5D0009E3DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		E68F8610236ED44E00C879C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 			children = (
 				CEAF4D3523630A5D0009E3DA /* UIView+.swift */,
 				CE92D2842369B9E5005130DD /* UIImage+Asset.swift */,
+				CE92D297237187BA005130DD /* UIFont+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */,
 				CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */,
 				CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */,
+				CE92D298237187BA005130DD /* UIFont+.swift in Sources */,
 				7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */,
 				CE92D28D236C2D17005130DD /* MyPageViewController.swift in Sources */,
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,

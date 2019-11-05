@@ -35,7 +35,8 @@ final class WritePostViewController: UIViewController {
     // 제목
     private let titleTextField = UITextField().then {
         $0.placeholder = "제목을 입력해주세요"
-        $0.font = .preferredFont(forTextStyle: .title1)
+//        $0.font = .preferredFont(forTextStyle: .title1)
+        $0.font = .customFont(ofSize: 25, weight: .extraBold)
         $0.snp.makeConstraints {
             $0.height.equalTo(30)
         }
@@ -44,7 +45,8 @@ final class WritePostViewController: UIViewController {
     // 설명
     private let descriptTextView = UITextView().then {
         $0.placeholder = "어떤 물품인지 설명해주세요"
-        $0.font = .preferredFont(forTextStyle: .footnote)
+//        $0.font = .preferredFont(forTextStyle: .footnote)
+        $0.font = .customFont(ofSize: 13, weight: .regular)
         $0.isScrollEnabled = false
         $0.textContainer.lineFragmentPadding = 0
         $0.textContainerInset = .zero
@@ -67,7 +69,7 @@ final class WritePostViewController: UIViewController {
 
     // deco
     private let titleUnderlineView = UIView().then {
-        $0.backgroundColor = .black
+        $0.backgroundColor = .label
     }
 
     override func viewDidLoad() {
@@ -83,6 +85,10 @@ final class WritePostViewController: UIViewController {
         navigationController?.navigationBar.do {
             $0.isTranslucent = false
             $0.shadowImage = UIImage()
+            $0.barTintColor = .systemBackground
+            $0.tintColor = .label
+            $0.titleTextAttributes = [NSAttributedString.Key.font: UIFont.customFont(ofSize: 14, weight: .extraBold)]
+
         }
 
         let closeBarButton = UIBarButtonItem(image: .iconClose, style: .plain, target: self, action: #selector(didTapClose))

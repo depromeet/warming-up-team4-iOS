@@ -12,14 +12,17 @@ import SnapKit
 import Then
 
 private let cellID = "itemCellID"
+private let itemHeight: CGFloat = 210
 final class MyPageItemsView: YSView {
   private let titleLabel = UILabel().then {
     $0.text = "내가 올린 물품"
+    $0.font = .customFont(ofSize: 13, weight: .bold)
   }
 
   private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then {
     $0.scrollDirection = .horizontal
   }).then {
+    $0.showsHorizontalScrollIndicator = false
     $0.delegate = self
     $0.dataSource = self
     $0.register(ItemCell.self, forCellWithReuseIdentifier: cellID)
@@ -38,7 +41,7 @@ final class MyPageItemsView: YSView {
     collectionView.snp.makeConstraints {
       $0.top.equalTo(titleLabel.snp.bottom).offset(12)
       $0.left.right.bottom.equalToSuperview()
-      $0.height.greaterThanOrEqualTo(140)
+      $0.height.greaterThanOrEqualTo(210)
     }
   }
 
@@ -56,7 +59,7 @@ extension MyPageItemsView: UICollectionViewDelegate, UICollectionViewDataSource,
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return .init(width: 90, height: 140)
+    return .init(width: 135, height: 210)
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -69,10 +72,12 @@ final class ItemCell: YSCell {
 
   private let titleLabel = UILabel().then {
     $0.text = "물건 제목"
+    $0.font = .customFont(ofSize: 14, weight: .bold)
   }
 
   private let dateLabel = UILabel().then {
     $0.text = "9999.99.99"
+    $0.font = .customFont(ofSize: 11, weight: .bold)
   }
 
   override func setupView() {
@@ -82,12 +87,12 @@ final class ItemCell: YSCell {
 
     imageView.snp.makeConstraints {
       $0.top.left.right.equalToSuperview()
-      $0.height.equalTo(100)
+        $0.height.equalTo(itemHeight * 0.7)
     }
 
     titleLabel.snp.makeConstraints {
       $0.top.equalTo(imageView.snp.bottom).offset(2)
-      $0.left.right.equalToSuperview().inset(4)
+      $0.left.right.equalToSuperview().inset(8)
     }
 
     dateLabel.snp.makeConstraints {

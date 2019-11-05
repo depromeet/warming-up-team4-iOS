@@ -14,7 +14,8 @@ import Then
 final class MyPageTitleLabel: UILabel {
 
     private func setupView() {
-        font = .preferredFont(forTextStyle: .title3)
+//        font = .preferredFont(forTextStyle: .title3)
+        font = .customFont(ofSize: 20, weight: .extraBold)
         text = "안녕하세요\n기네스님:)"
         numberOfLines = 2
     }

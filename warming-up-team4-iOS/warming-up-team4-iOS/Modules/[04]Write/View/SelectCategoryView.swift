@@ -16,7 +16,8 @@ final class SelectCategoryView: UIView {
 
     private let titleLabel = UILabel().then {
         $0.text = "카테고리 선택"
-        $0.font = .preferredFont(forTextStyle: .headline)
+//        $0.font = .preferredFont(forTextStyle: .headline)
+        $0.font = .customFont(ofSize: 17, weight: .bold)
     }
 
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
@@ -95,7 +96,8 @@ final class PostCategoryCell: UICollectionViewCell {
     }
 
     private let categoryLabel = UILabel().then {
-        $0.font = .preferredFont(forTextStyle: .caption2)
+//        $0.font = .preferredFont(forTextStyle: .caption2)
+        $0.font = .customFont(ofSize: 11, weight: .bold)
         $0.text = "애완동물"
         $0.textAlignment = .center
         $0.setContentCompressionResistancePriority(.required, for: .vertical)

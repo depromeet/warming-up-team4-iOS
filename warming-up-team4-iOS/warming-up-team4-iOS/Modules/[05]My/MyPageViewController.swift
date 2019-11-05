@@ -54,12 +54,14 @@ final class MyPageViewController: UIViewController {
         navigationController?.navigationBar.do {
             $0.isTranslucent = false
             $0.shadowImage = UIImage()
+            $0.titleTextAttributes = [NSAttributedString.Key.font: UIFont.customFont(ofSize: 14, weight: .extraBold)]
         }
 
         navigationItem.do {
-            let notiBarButtonItem = UIBarButtonItem(image: .iconAccept, style: .plain, target: self, action: #selector(didTapNoti))
-            $0.rightBarButtonItem = notiBarButtonItem
+//            let notiBarButtonItem = UIBarButtonItem(image: .iconAccept, style: .plain, target: self, action: #selector(didTapNoti))
+//            $0.rightBarButtonItem = notiBarButtonItem
             $0.title = "MY PAGE"
+
         }
     }
 
