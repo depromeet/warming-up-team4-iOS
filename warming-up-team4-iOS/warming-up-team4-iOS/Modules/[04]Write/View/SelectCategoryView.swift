@@ -14,6 +14,18 @@ import Then
 private let cellID = "postCategoryCellID"
 final class SelectCategoryView: UIView {
 
+    // MARK: - Properties
+
+    private let categories = CategoryType.allItems
+
+    private var selectedCategory: CategoryType? = nil {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+
+    // MARK: - Views
+
     private let titleLabel = UILabel().then {
         $0.text = "카테고리 선택"
 //        $0.font = .preferredFont(forTextStyle: .headline)
@@ -53,12 +65,23 @@ final class SelectCategoryView: UIView {
 }
 
 extension SelectCategoryView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedCategory = categories[indexPath.item]
+    }
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return categories.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! PostCategoryCell
+        let category = categories[indexPath.item]
+        cell.category = category
+
+        let isSelectedCategory = category == selectedCategory
+        cell.isSelectedCategory = isSelectedCategory
+
         return cell
     }
 
@@ -73,7 +96,7 @@ extension SelectCategoryView: UICollectionViewDelegate, UICollectionViewDataSour
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
+        return 24
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -82,17 +105,31 @@ extension SelectCategoryView: UICollectionViewDelegate, UICollectionViewDataSour
 
 }
 
-
 final class PostCategoryCell: UICollectionViewCell {
+
+    var isSelectedCategory: Bool = false {
+        didSet {
+            categoryLabel.textColor = isSelectedCategory ? .main : .label
+            imageView.tintColor = isSelectedCategory ? .main : .label
+        }
+    }
+
+    var category: CategoryType? {
+        didSet {
+            self.categoryLabel.text = category?.title
+            self.imageView.image = UIImage(named: category?.assetName ?? "")
+        }
+    }
 
     private lazy var stackView = UIStackView(arrangedSubviews: [self.imageView,
                                                                 self.categoryLabel]).then {
-                                                                    $0.spacing = 4
+                                                                    $0.spacing = 2
                                                                     $0.axis = .vertical
     }
 
-    private let imageView = UIImageView(image: UIImage(named: "feed_image")).then {
-        $0.contentMode = .scaleAspectFit
+    private let imageView = UIImageView().then {
+        $0.tintColor = .label
+        $0.contentMode = .center
     }
 
     private let categoryLabel = UILabel().then {
