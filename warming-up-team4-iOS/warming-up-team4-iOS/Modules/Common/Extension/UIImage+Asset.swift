@@ -37,4 +37,8 @@ extension UIImage {
     return UIImage(named: "iconCamera")!
   }
 
+    static var logo: UIImage {
+      return UIImage(named: "Logo")!
+    }
+
 }

@@ -23,7 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // tabar
         let mainTabBarController = MainTabBarController()
        
-        window?.rootViewController = mainTabBarController
+//        window?.rootViewController = mainTabBarController
+        window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
         window?.makeKeyAndVisible()
     }
 

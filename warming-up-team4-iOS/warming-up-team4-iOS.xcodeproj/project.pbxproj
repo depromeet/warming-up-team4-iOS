@@ -32,6 +32,13 @@
 		CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */; };
 		CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D291236C379F005130DD /* ProfileInfoView.swift */; };
 		CE92D298237187BA005130DD /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D297237187BA005130DD /* UIFont+.swift */; };
+		CE92D29B2371980A005130DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D29A2371980A005130DD /* LoginViewController.swift */; };
+		CE92D29D237199E6005130DD /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D29C237199E6005130DD /* UIColor+.swift */; };
+		CE92D2A92371A02F005130DD /* BoxedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2A82371A02F005130DD /* BoxedButton.swift */; };
+		CE92D2AB2371A039005130DD /* BoxedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2AA2371A039005130DD /* BoxedTextField.swift */; };
+		CE92D2AD2371A346005130DD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2AC2371A346005130DD /* SignUpViewController.swift */; };
+		CE92D2AF2371A457005130DD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2AE2371A457005130DD /* UIViewController+.swift */; };
+		CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2B02371A5F3005130DD /* YSViewController.swift */; };
 		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
 		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
 		E68F8611236ED44E00C879C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8610236ED44E00C879C8 /* Constants.swift */; };
@@ -70,6 +77,13 @@
 		CE92D28F236C32C2005130DD /* MyPageTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTitleLabel.swift; sourceTree = "<group>"; };
 		CE92D291236C379F005130DD /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		CE92D297237187BA005130DD /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		CE92D29A2371980A005130DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE92D29C237199E6005130DD /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		CE92D2A82371A02F005130DD /* BoxedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxedButton.swift; sourceTree = "<group>"; };
+		CE92D2AA2371A039005130DD /* BoxedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxedTextField.swift; sourceTree = "<group>"; };
+		CE92D2AC2371A346005130DD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE92D2AE2371A457005130DD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		CE92D2B02371A5F3005130DD /* YSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSViewController.swift; sourceTree = "<group>"; };
 		CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangePlaceView.swift; sourceTree = "<group>"; };
 		CEAF4D3523630A5D0009E3DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		E68F8610236ED44E00C879C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -110,6 +124,7 @@
 		7B4EBFA9235A1BB400B12536 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE92D29923719636005130DD /* [00]Sign Up */,
 				7B4EBFAB235A1BEF00B12536 /* [01]Feed */,
 				7B8B837F235AF2790017D1A6 /* [02]Category */,
 				7B8B8380235AF2840017D1A6 /* [03]Chatting */,
@@ -123,7 +138,7 @@
 		7B4EBFAA235A1BD500B12536 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E68F8614236EDDD400C879C8 /* Base UI */,
+				CE92D2A72371A020005130DD /* Custom UI */,
 				CEAF4D3423630A500009E3DA /* Extension */,
 				7BA089D9235F272E00377A65 /* AppNavigationView.swift */,
 				7B27AF7C235F2999004A771A /* LargeTitleView.swift */,
@@ -278,6 +293,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CE92D29923719636005130DD /* [00]Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				CE92D29A2371980A005130DD /* LoginViewController.swift */,
+				CE92D2AC2371A346005130DD /* SignUpViewController.swift */,
+			);
+			path = "[00]Sign Up";
+			sourceTree = "<group>";
+		};
+		CE92D2A72371A020005130DD /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				E68F8614236EDDD400C879C8 /* Base UI */,
+				CE92D2A82371A02F005130DD /* BoxedButton.swift */,
+				CE92D2AA2371A039005130DD /* BoxedTextField.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
 		CEAF4D312363094E0009E3DA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +329,8 @@
 				CEAF4D3523630A5D0009E3DA /* UIView+.swift */,
 				CE92D2842369B9E5005130DD /* UIImage+Asset.swift */,
 				CE92D297237187BA005130DD /* UIFont+.swift */,
+				CE92D29C237199E6005130DD /* UIColor+.swift */,
+				CE92D2AE2371A457005130DD /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -315,6 +351,7 @@
 			children = (
 				E68F8615236EDDE700C879C8 /* YSCell.swift */,
 				E68F8617236EDE8B00C879C8 /* YSView.swift */,
+				CE92D2B02371A5F3005130DD /* YSViewController.swift */,
 			);
 			path = "Base UI";
 			sourceTree = "<group>";
@@ -434,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE92D29D237199E6005130DD /* UIColor+.swift in Sources */,
 				E68F8618236EDE8B00C879C8 /* YSView.swift in Sources */,
 				E68F8616236EDDE700C879C8 /* YSCell.swift in Sources */,
 				CE92D292236C379F005130DD /* ProfileInfoView.swift in Sources */,
@@ -446,6 +484,7 @@
 				CE92D290236C32C2005130DD /* MyPageTitleLabel.swift in Sources */,
 				CE92D2852369B9E5005130DD /* UIImage+Asset.swift in Sources */,
 				CE92D298237187BA005130DD /* UIFont+.swift in Sources */,
+				CE92D29B2371980A005130DD /* LoginViewController.swift in Sources */,
 				7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */,
 				CE92D28D236C2D17005130DD /* MyPageViewController.swift in Sources */,
 				CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */,
@@ -453,9 +492,14 @@
 				CE4A202A2369964B00900A71 /* ImageMultipleSelectView.swift in Sources */,
 				E68F8613236ED6DB00C879C8 /* MyPageItemsView.swift in Sources */,
 				7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */,
+				CE92D2AB2371A039005130DD /* BoxedTextField.swift in Sources */,
+				CE92D2AD2371A346005130DD /* SignUpViewController.swift in Sources */,
 				CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */,
+				CE92D2AF2371A457005130DD /* UIViewController+.swift in Sources */,
 				CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */,
 				7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */,
+				CE92D2A92371A02F005130DD /* BoxedButton.swift in Sources */,
+				CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */,
 				CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

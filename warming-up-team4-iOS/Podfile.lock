@@ -1,5 +1,11 @@
 PODS:
   - PryntTrimmerView (4.0.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
   - SnapKit (5.0.1)
   - SteviaLayout (4.6.1)
   - Then (2.6.0)
@@ -9,6 +15,8 @@ PODS:
     - SteviaLayout (~> 4.6.0)
 
 DEPENDENCIES:
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
   - SnapKit (~> 5.0.0)
   - Then
   - "UITextView+Placeholder"
@@ -17,6 +25,9 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - PryntTrimmerView
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - SteviaLayout
     - Then
@@ -25,12 +36,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SteviaLayout: 0c83442390c8a369c21f975ffbd812d11532645b
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
   "UITextView+Placeholder": c407b27599ea23cca425946fee3cf1db5d547008
   YPImagePicker: bdaa46782668e260fdd9709f19043a9f469fd2ad
 
-PODFILE CHECKSUM: b36cdccf16f9e474ba4e89a29d0452c3cf521b88
+PODFILE CHECKSUM: 115b33ce69d22afd1722b6e88dd09924a537d36f
 
 COCOAPODS: 1.8.3

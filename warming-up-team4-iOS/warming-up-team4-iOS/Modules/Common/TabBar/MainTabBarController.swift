@@ -36,7 +36,6 @@ class MainTabBarController: UITabBarController {
 
         delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
 
-
     }
 
 }

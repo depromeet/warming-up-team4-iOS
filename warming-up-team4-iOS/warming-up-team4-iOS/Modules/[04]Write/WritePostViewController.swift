@@ -80,17 +80,9 @@ final class WritePostViewController: UIViewController {
     }
 
     private func setupNavBar() {
-        title = "내 물품 등록하기"
-
-        navigationController?.navigationBar.do {
-            $0.isTranslucent = false
-            $0.shadowImage = UIImage()
-            $0.barTintColor = .systemBackground
-            $0.tintColor = .label
-            $0.titleTextAttributes = [NSAttributedString.Key.font: UIFont.customFont(ofSize: 14, weight: .extraBold)]
-
-        }
-
+        setCustomFontTitle(text: "내 물품 등록하기")
+        setupNavigationUI()
+        
         let closeBarButton = UIBarButtonItem(image: .iconClose, style: .plain, target: self, action: #selector(didTapClose))
         let acceptBarButton = UIBarButtonItem(image: .iconAccept, style: .plain, target: self, action: #selector(didTapAccept))
         navigationItem.leftBarButtonItem = closeBarButton

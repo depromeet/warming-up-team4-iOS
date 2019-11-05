@@ -28,6 +28,6 @@ extension UIFont {
         case .light:
             fontName = "NanumSquareOTF_acL"
         }
-        return UIFont(name: fontName, size: fontSize)!
+        return UIFont(name: fontName, size: fontSize + 3)!
     }
 }
