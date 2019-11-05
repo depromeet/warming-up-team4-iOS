@@ -12,6 +12,7 @@ import Combine
 
 
 struct FeedView: View {
+    var tabbarController: MainTabBarController
     @State var users = ["Munon", "Gomin", "Durup"]
     let height: CGFloat = 100.0
     var body: some View {
@@ -70,6 +71,7 @@ struct FeedView: View {
 //.font(Font.custom("Montserrat-Bold", size: 60.0))
 
 struct FeedCellView: View {
+   // var tabBarController: MainTabBarController
     var body: some View {
 //        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
             VStack(alignment: .leading, spacing: 5) {
@@ -109,7 +111,7 @@ struct FeedCellView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        FeedView(tabbarController: MainTabBarController())
     }
 }
 

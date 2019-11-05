@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C24183215FC7A7D4F5B4075 /* Pods_warming_up_team4_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */; };
+		2F75AB792362BDCA00282D41 /* NanumSquareOTF_acL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB752362BDCA00282D41 /* NanumSquareOTF_acL.otf */; };
+		2F75AB7A2362BDCA00282D41 /* NanumSquareOTF_acR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB762362BDCA00282D41 /* NanumSquareOTF_acR.otf */; };
+		2F75AB7B2362BDCA00282D41 /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */; };
+		2F75AB7C2362BDCA00282D41 /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */; };
 		7B12B32F2361D607001407A2 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B32C2361D606001407A2 /* BottomBar.swift */; };
 		7B12B3302361D607001407A2 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B32D2361D606001407A2 /* BottomBarItem.swift */; };
 		7B12B3312361D607001407A2 /* BottomBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B32E2361D607001407A2 /* BottomBarItemView.swift */; };
 		7B12B3332361D851001407A2 /* HomeTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12B3322361D851001407A2 /* HomeTabbedView.swift */; };
 		7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27AF7C235F2999004A771A /* LargeTitleView.swift */; };
 		7B4EBFB0235A1D8700B12536 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */; };
-		7BA089D2235E17ED00377A65 /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */; };
-		7BA089D3235E17ED00377A65 /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */; };
-		7BA089D4235E17ED00377A65 /* NanumSquareOTF_acL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */; };
-		7BA089D5235E17ED00377A65 /* NanumSquareOTF_acR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */; };
 		7BA089D8235F262D00377A65 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D7235F262D00377A65 /* CategoryView.swift */; };
 		7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D9235F272E00377A65 /* AppNavigationView.swift */; };
 		7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AB235DDF83003E369C /* FeedView.swift */; };
@@ -31,24 +30,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_warming_up_team4_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2F75AB752362BDCA00282D41 /* NanumSquareOTF_acL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acL.otf; sourceTree = "<group>"; };
+		2F75AB762362BDCA00282D41 /* NanumSquareOTF_acR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acR.otf; sourceTree = "<group>"; };
+		2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
+		2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		7B12B32C2361D606001407A2 /* BottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		7B12B32D2361D606001407A2 /* BottomBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
 		7B12B32E2361D607001407A2 /* BottomBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItemView.swift; sourceTree = "<group>"; };
 		7B12B3322361D851001407A2 /* HomeTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbedView.swift; sourceTree = "<group>"; };
 		7B27AF7C235F2999004A771A /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		7B4EBFAF235A1D8700B12536 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acEB.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
-		7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acR.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acR.otf; sourceTree = "<group>"; };
-		7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acL.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acL.otf; sourceTree = "<group>"; };
-		7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acB.otf; path = ../../../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		7BA089D7235F262D00377A65 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		7BA089D9235F272E00377A65 /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
 		7BDDD6AB235DDF83003E369C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
 		7BF20F712361FE39007C93DC /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
-		A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2DC631235442BC00A5CD9E /* warming-up-team4-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "warming-up-team4-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2DC634235442BC00A5CD9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2DC636235442BC00A5CD9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +52,6 @@
 		CE2DC63D235442BD00A5CD9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2DC640235442BD00A5CD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2DC642235442BD00A5CD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5408FDEFA6D44E2100F28E5 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		FBC5E0E2216FF2ACE5B6FB99 /* Pods-warming-up-team4-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C24183215FC7A7D4F5B4075 /* Pods_warming_up_team4_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				CE2DC63A235442BC00A5CD9E /* Main.storyboard */,
+				2F75AB782362BDCA00282D41 /* NanumSquareOTF_acB.otf */,
+				2F75AB772362BDCA00282D41 /* NanumSquareOTF_acEB.otf */,
+				2F75AB752362BDCA00282D41 /* NanumSquareOTF_acL.otf */,
+				2F75AB762362BDCA00282D41 /* NanumSquareOTF_acR.otf */,
 				CE2DC63D235442BD00A5CD9E /* Assets.xcassets */,
 				CE2DC63F235442BD00A5CD9E /* LaunchScreen.storyboard */,
 				CE2DC642235442BD00A5CD9E /* Info.plist */,
-				7BA089D1235E15AF00377A65 /* NanumSquareOTF_acB.otf */,
-				7BA089CE235E15AF00377A65 /* NanumSquareOTF_acEB.otf */,
-				7BA089D0235E15AF00377A65 /* NanumSquareOTF_acL.otf */,
-				7BA089CF235E15AF00377A65 /* NanumSquareOTF_acR.otf */,
 			);
 			path = SupportingFIles;
 			sourceTree = "<group>";
@@ -201,21 +194,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		94F444B7FA0B8C6CF5FA9ACA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4441EE8260BE54EAA374483B /* Pods_warming_up_team4_iOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CE2DC628235442BC00A5CD9E = {
 			isa = PBXGroup;
 			children = (
 				CE2DC633235442BC00A5CD9E /* warming-up-team4-iOS */,
 				CE2DC632235442BC00A5CD9E /* Products */,
 				E2309C6F9EE0982EFD402B08 /* Pods */,
-				94F444B7FA0B8C6CF5FA9ACA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,10 +225,6 @@
 		E2309C6F9EE0982EFD402B08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */,
-				455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */,
-				F5408FDEFA6D44E2100F28E5 /* Pods-warming-up-team4-iOS.debug.xcconfig */,
-				FBC5E0E2216FF2ACE5B6FB99 /* Pods-warming-up-team4-iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -256,7 +236,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE2DC645235442BD00A5CD9E /* Build configuration list for PBXNativeTarget "warming-up-team4-iOS" */;
 			buildPhases = (
-				69EA80963FDE12ED853DD33A /* [CP] Check Pods Manifest.lock */,
 				CE2DC62D235442BC00A5CD9E /* Sources */,
 				CE2DC62E235442BC00A5CD9E /* Frameworks */,
 				CE2DC62F235442BC00A5CD9E /* Resources */,
@@ -308,38 +287,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA089D2235E17ED00377A65 /* NanumSquareOTF_acB.otf in Resources */,
-				7BA089D3235E17ED00377A65 /* NanumSquareOTF_acEB.otf in Resources */,
-				7BA089D4235E17ED00377A65 /* NanumSquareOTF_acL.otf in Resources */,
-				7BA089D5235E17ED00377A65 /* NanumSquareOTF_acR.otf in Resources */,
 				CE2DC641235442BD00A5CD9E /* LaunchScreen.storyboard in Resources */,
+				2F75AB7A2362BDCA00282D41 /* NanumSquareOTF_acR.otf in Resources */,
+				2F75AB792362BDCA00282D41 /* NanumSquareOTF_acL.otf in Resources */,
 				CE2DC63E235442BD00A5CD9E /* Assets.xcassets in Resources */,
 				CE2DC63C235442BC00A5CD9E /* Main.storyboard in Resources */,
+				2F75AB7C2362BDCA00282D41 /* NanumSquareOTF_acB.otf in Resources */,
+				2F75AB7B2362BDCA00282D41 /* NanumSquareOTF_acEB.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		69EA80963FDE12ED853DD33A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-warming-up-team4-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE2DC62D235442BC00A5CD9E /* Sources */ = {
@@ -386,7 +344,6 @@
 /* Begin XCBuildConfiguration section */
 		CE2DC643235442BD00A5CD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -448,7 +405,6 @@
 		};
 		CE2DC644235442BD00A5CD9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -504,7 +460,6 @@
 		};
 		CE2DC646235442BD00A5CD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -526,7 +481,6 @@
 		};
 		CE2DC647235442BD00A5CD9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 455EB03F7E03F8FB9689F417 /* Pods-warming-up-team4-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";

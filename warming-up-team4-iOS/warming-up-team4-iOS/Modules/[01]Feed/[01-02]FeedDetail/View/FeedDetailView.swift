@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct FeedDetailView: View {
+    // var tabbarController: MainTabBarController
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
   
     @State var dismissParent: () -> Void
@@ -79,6 +80,32 @@ extension FeedDetailView {
         .padding(.trailing, 20)
         .frame(height: 30)
     }
+//    var divider: some View {
+//          Rectangle()
+//              .fill(Color("app_list_cotent_color"))
+//            .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 1)
+//            .blur(radius: 1.0)
+//        }
+    
+    var bottomBar: some View {
+        HStack{
+                     Text("대학생님께")
+                     Spacer()
+                         .frame(width: 30)
+                     Button(action: {
+                         print("tap")
+                     }) {
+                         Text("교환신청하기")
+                         .font(Font.custom("NanumSquareOTF_acB", size: 16))
+                     }.frame(width: 130, height: 41)
+                     .background(Color("app_point_color"))
+                         .foregroundColor(Color.white)
+                     .cornerRadius(5)
+                         
+                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 35, alignment: .bottom)
+    }
+    
+    
 }
 
 
@@ -181,6 +208,6 @@ struct AnotherItemView: View {
 }
 struct FeedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedDetailView(dismissParent: {})
+        FeedDetailView (dismissParent: {})
     }
 }
