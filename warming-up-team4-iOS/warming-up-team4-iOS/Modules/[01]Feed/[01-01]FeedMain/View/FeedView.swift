@@ -21,7 +21,7 @@ struct FeedView: View {
         
            VStack() {
             
-           navi
+           AppNavigationView()
             .padding(.top)
             .frame(alignment: .topLeading)
                 .frame(height: 60)
@@ -38,20 +38,6 @@ struct FeedView: View {
         }
     }
     
-    var navi: some View {
-        HStack (alignment: .top) {
-                   Spacer()
-                   Button(action: {}) {
-                       Text("close")
-                   }
-                   Button(action: {}) {
-                       Text("share")
-                   }.frame(alignment: .trailing)
-                   
-        }.padding(.top,0)
-                   
-               .frame(height: 50)
-    }
     var content: some View {
     
         List {

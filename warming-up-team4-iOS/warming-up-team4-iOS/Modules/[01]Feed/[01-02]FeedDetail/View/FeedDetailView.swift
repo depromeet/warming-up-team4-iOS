@@ -50,12 +50,14 @@ extension FeedDetailView {
     var topBar: some View {
         HStack (alignment: .bottom) {
             Button(action: {self.popParent()}) {
-                Text("close")
+                 Image("back_btn")
+                               .renderingMode(.original)
                 // self.link.presented?.value = false
             }
             Spacer()
             Button(action: {}) {
-                Text("share")
+                 Image("share_btn")
+                               .renderingMode(.original)
             }
             
         }

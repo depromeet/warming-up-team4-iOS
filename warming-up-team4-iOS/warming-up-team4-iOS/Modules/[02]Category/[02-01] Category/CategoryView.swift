@@ -11,7 +11,7 @@ import Combine
 struct CategoryView: View {
     var body: some View {
         NavigationView {
-            VStack(spacing:0) {
+            VStack(alignment: .leading,spacing:0) {
                 AppNavigationView()
                 LargeTitleView()
                     .frame(height: 100)
@@ -21,27 +21,28 @@ struct CategoryView: View {
                     
                     //NavigationLink(destination:
 //
-                    HStack(spacing: 0) {
-                        VStack(spacing: 10) {
+                    HStack(alignment: .center,spacing: 0) {
+                        VStack(alignment: .leading,spacing: 10) {
                             HStack {
-                                CategoryCelView()
-                                CategoryCelView()
-                                CategoryCelView()
+                                CategoryCelView(categoryImageName: "category_food")
+                                CategoryCelView(categoryImageName: "category_women_clothes")
+                                CategoryCelView(categoryImageName: "category_man_clothes")
                             }
                             HStack {
-                                CategoryCelView()
-                                CategoryCelView()
-                                CategoryCelView()
+                                CategoryCelView(categoryImageName: "category_cosmetic")
+                                CategoryCelView(categoryImageName: "category_daily_necessity")
+                                CategoryCelView(categoryImageName: "category_book")
                             }
                             HStack {
-                                CategoryCelView()
-                                CategoryCelView()
-                                CategoryCelView()
+                                CategoryCelView(categoryImageName: "category_electronic")
+                                CategoryCelView(categoryImageName: "category_furniture")
+                                CategoryCelView(categoryImageName: "category_pet")
+                                
                             }
+                            
                             HStack {
-                                CategoryCelView()
-                                CategoryCelView()
-                                CategoryCelView()
+                                CategoryCelView(categoryImageName: "")
+                                
                             }
                             
                             
@@ -55,6 +56,7 @@ struct CategoryView: View {
                            }
                         
                     }
+                    
                            
                         
                   //  }
@@ -67,38 +69,44 @@ struct CategoryView: View {
                 .padding(.leading, 10)
             .padding(.trailing, 10)
             
+            
+            
         }.frame(alignment: .topLeading)
         
         
         
     }
     
+    init() {
+        UITableView.appearance().tableFooterView = UIView()
+
+        // To remove all separators including the actual ones:
+        UITableView.appearance().separatorStyle = .none
+    }
 
 }
-
+extension List {
+  func separatorStyle(_ style: UITableViewCell.SeparatorStyle) -> Self {
+    UITableView.appearance().separatorStyle = style
+    return self
+   }
+}
 struct CategoryCelView: View {
-    
+    var categoryImageName: String
     var body: some View {
-        //HStack {
-            
-//            VStack(spacing: 20) {
-//                Image("feed_image")
-//                    .resizable()
-//                    .scaledToFit()
-//                Text("여성의류")
-//
-//            }.padding(.bottom, 10)
-//                .border(Color("app_list_cotent_color"))
-               // .border(width: 1)
+
         
                                  VStack(spacing: 20) {
-                                     Image("feed_image")
-                                     .resizable()
-                                     .scaledToFit()
+                                     Image(categoryImageName)
+                                    .resizable()
+                                    .scaledToFit()
+                                  
+                                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 45, alignment: .center)
                                      Text("여성의류")
                                   .font(Font.custom("NanumSquareOTF_acR", size: 14)) .foregroundColor(Color("app_category_tile_color"))
                                      
                                  }.padding(.bottom, 10)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 120, alignment: .leading)
 //                                 .border(Color("app_list_cotent_color"))
                            //      }
             
