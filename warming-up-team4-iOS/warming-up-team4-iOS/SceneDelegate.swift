@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let mainTabBarController = MainTabBarController()
        
         window?.rootViewController = mainTabBarController
+//        window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
         window?.makeKeyAndVisible()
     }
 

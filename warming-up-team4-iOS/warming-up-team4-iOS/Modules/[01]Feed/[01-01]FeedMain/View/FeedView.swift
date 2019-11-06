@@ -79,5 +79,3 @@ struct FeedView_Previews: PreviewProvider {
         FeedView(tabbarController: MainTabBarController())
     }
 }
-
-

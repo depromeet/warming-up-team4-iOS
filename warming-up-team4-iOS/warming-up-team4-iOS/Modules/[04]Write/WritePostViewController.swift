@@ -18,7 +18,7 @@ private let rightInset: CGFloat = 20
 final class WritePostViewController: UIViewController {
 
     private let scrollView = UIScrollView().then {
-        $0.keyboardDismissMode = .onDrag
+        $0.keyboardDismissMode = .interactive
     }
 
     private lazy var verticalStackView = UIStackView(arrangedSubviews: [self.titleTextField,
@@ -35,7 +35,8 @@ final class WritePostViewController: UIViewController {
     // 제목
     private let titleTextField = UITextField().then {
         $0.placeholder = "제목을 입력해주세요"
-        $0.font = .preferredFont(forTextStyle: .title1)
+//        $0.font = .preferredFont(forTextStyle: .title1)
+        $0.font = .customFont(ofSize: 25, weight: .extraBold)
         $0.snp.makeConstraints {
             $0.height.equalTo(30)
         }
@@ -44,7 +45,8 @@ final class WritePostViewController: UIViewController {
     // 설명
     private let descriptTextView = UITextView().then {
         $0.placeholder = "어떤 물품인지 설명해주세요"
-        $0.font = .preferredFont(forTextStyle: .footnote)
+//        $0.font = .preferredFont(forTextStyle: .footnote)
+        $0.font = .customFont(ofSize: 13, weight: .regular)
         $0.isScrollEnabled = false
         $0.textContainer.lineFragmentPadding = 0
         $0.textContainerInset = .zero
@@ -67,7 +69,7 @@ final class WritePostViewController: UIViewController {
 
     // deco
     private let titleUnderlineView = UIView().then {
-        $0.backgroundColor = .black
+        $0.backgroundColor = .label
     }
 
     override func viewDidLoad() {
@@ -78,15 +80,11 @@ final class WritePostViewController: UIViewController {
     }
 
     private func setupNavBar() {
-        title = "내 물품 등록하기"
-
-        navigationController?.navigationBar.do {
-            $0.isTranslucent = false
-            $0.shadowImage = UIImage()
-        }
-
-        let closeBarButton = UIBarButtonItem(image: .iconClose, style: .plain, target: self, action: #selector(didTapClose))
-        let acceptBarButton = UIBarButtonItem(image: .iconAccept, style: .plain, target: self, action: #selector(didTapAccept))
+        setCustomFontTitle(text: "내 물품 등록하기")
+        setupNavigationUI()
+        
+        let closeBarButton = UIBarButtonItem(image: R.image.iconClose(), style: .plain, target: self, action: #selector(didTapClose))
+        let acceptBarButton = UIBarButtonItem(image: R.image.iconAccept(), style: .plain, target: self, action: #selector(didTapAccept))
         navigationItem.leftBarButtonItem = closeBarButton
         navigationItem.rightBarButtonItem = acceptBarButton
     }
@@ -103,8 +101,6 @@ final class WritePostViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(scrollView)
 
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-
         scrollView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
@@ -116,7 +112,6 @@ final class WritePostViewController: UIViewController {
             $0.left.equalTo(view.safeAreaLayoutGuide).offset(leftInset)
             $0.right.equalTo(view.safeAreaLayoutGuide).offset(-rightInset)
             $0.bottom.equalToSuperview().inset(200)
-
         }
 
         titleTextField.addSubview(titleUnderlineView)

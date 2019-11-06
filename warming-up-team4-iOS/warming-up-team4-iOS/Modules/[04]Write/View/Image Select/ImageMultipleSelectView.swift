@@ -140,11 +140,13 @@ final class PostImageCell: UICollectionViewCell {
 
 final class AddImageCell: UICollectionViewCell {
 
-    private let addIconImageView = UIImageView(image: .iconAdd)
+    private let addIconImageView = UIImageView(image: .iconAdd).then {
+        $0.tintColor = .label
+    }
 
     private func setupView() {
         layer.borderWidth = 1
-        layer.borderColor = UIColor.black.cgColor
+        layer.borderColor = UIColor.label.cgColor
 
         addSubview(addIconImageView)
         addIconImageView.snp.makeConstraints {

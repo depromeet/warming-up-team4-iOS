@@ -28,4 +28,17 @@ extension UIImage {
     static var iconTabEdit: UIImage {
         return UIImage(named: "iconTabEdit")!
     }
+
+  static var iconTabMy: UIImage {
+    return UIImage(named: "iconTabMy")!
+  }
+
+  static var iconCamera: UIImage {
+    return UIImage(named: "iconCamera")!
+  }
+
+    static var logo: UIImage {
+      return UIImage(named: "Logo")!
+    }
+
 }

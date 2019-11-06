@@ -26,12 +26,14 @@ final class InputHashtagView: UIView {
 
     private let titleLabel = UILabel().then {
         $0.text = "#해시태그"
-        $0.font = .preferredFont(forTextStyle: .headline)
+//        $0.font = .preferredFont(forTextStyle: .headline)
+        $0.font = .customFont(ofSize: 17, weight: .bold)
     }
 
     private let textView = UITextView().then {
         $0.placeholder = "#입력하기"
-        $0.font = .preferredFont(forTextStyle: .footnote)
+//        $0.font = .preferredFont(forTextStyle: .footnote)
+        $0.font = .customFont(ofSize: 13, weight: .regular)
         $0.textContainer.lineFragmentPadding = 0
         $0.textContainerInset = .zero
         $0.isScrollEnabled = false
