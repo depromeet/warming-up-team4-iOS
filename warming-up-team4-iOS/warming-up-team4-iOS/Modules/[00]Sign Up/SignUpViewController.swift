@@ -63,9 +63,17 @@ final class SignUpViewController: YSViewController {
         $0.isSecureTextEntry = true
     }
 
-    private let signUpButton = BoxedButton().then {
+    private lazy var signUpButton = BoxedButton().then {
         $0.setTitle("가입하기", for: .normal)
+      $0.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
     }
+
+  @objc private func didTapSignUp() {
+    let tabBarVC = MainTabBarController().then {
+      $0.modalPresentationStyle = .fullScreen
+    }
+    present(tabBarVC, animated: true, completion: nil)
+  }
 
     override func setupViews() {
         super.setupViews()

@@ -45,9 +45,9 @@
 		CE92D2AF2371A457005130DD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2AE2371A457005130DD /* UIViewController+.swift */; };
 		CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2B02371A5F3005130DD /* YSViewController.swift */; };
 		CE92D2B32371AE01005130DD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2B22371AE01005130DD /* Category.swift */; };
-		CE92D2BC2371B8F5005130DD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2BA2371B8AE005130DD /* R.generated.swift */; };
 		CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D32236309780009E3DA /* InputChangePlaceView.swift */; };
 		CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF4D3523630A5D0009E3DA /* UIView+.swift */; };
+		E62B9DF42372DC4100E5A78C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92D2BA2371B8AE005130DD /* R.generated.swift */; };
 		E68F8611236ED44E00C879C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8610236ED44E00C879C8 /* Constants.swift */; };
 		E68F8613236ED6DB00C879C8 /* MyPageItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8612236ED6DB00C879C8 /* MyPageItemsView.swift */; };
 		E68F8616236EDDE700C879C8 /* YSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F8615236EDDE700C879C8 /* YSCell.swift */; };
@@ -551,7 +551,7 @@
 				CE92D2872369C19D005130DD /* SelectCategoryView.swift in Sources */,
 				CE92D2AF2371A457005130DD /* UIViewController+.swift in Sources */,
 				CEAF4D3623630A5D0009E3DA /* UIView+.swift in Sources */,
-				CE92D2BC2371B8F5005130DD /* R.generated.swift in Sources */,
+				E62B9DF42372DC4100E5A78C /* R.generated.swift in Sources */,
 				7B27AF7D235F2999004A771A /* LargeTitleView.swift in Sources */,
 				7BF20F722361FE39007C93DC /* CategoryDetailView.swift in Sources */,
 				CE92D2A92371A02F005130DD /* BoxedButton.swift in Sources */,

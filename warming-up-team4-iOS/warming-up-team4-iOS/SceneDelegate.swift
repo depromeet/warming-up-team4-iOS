@@ -25,9 +25,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let navi = UINavigationController()
 //        let tab = UIHostingController(rootView: HomeTabbedView())
         let mainTabBarController = MainTabBarController()
-        window?.rootViewController = mainTabBarController
-//        window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
+       
+//        window?.rootViewController = mainTabBarController
 
+
+        window?.rootViewController = LoginViewController()
+//      window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
         window?.makeKeyAndVisible()
     }
 

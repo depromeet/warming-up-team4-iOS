@@ -22,7 +22,7 @@ final class LoginViewController: UIViewController {
         $0.spacing = 16
     }
 
-    private let logoImageView = UIImageView(image: .logo).then {
+    private let logoImageView = UIImageView(image: UIImage.logo).then {
         $0.contentMode = .scaleAspectFit
     }
 
@@ -36,9 +36,19 @@ final class LoginViewController: UIViewController {
         $0.isSecureTextEntry = true
     }
 
-    private let loginButton = BoxedButton().then {
+    private lazy var loginButton = BoxedButton().then {
         $0.setTitle("LOGIN", for: .normal)
+      $0.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
     }
+
+  @objc private func didTapLogin() {
+//    let tabBarVC = MainTabBarController().then {
+//      $0.modalPresentationStyle = .fullScreen
+//    }
+//    present(tabBarVC, animated: true, completion: nil)
+    let signUpVC = UINavigationController(rootViewController: SignUpViewController())
+    present(signUpVC, animated: true, completion: nil)
+  }
 
     override func viewDidLoad() {
         super.viewDidLoad()
