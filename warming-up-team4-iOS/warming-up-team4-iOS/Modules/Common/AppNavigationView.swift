@@ -13,10 +13,12 @@ struct AppNavigationView: View {
         HStack (alignment: .bottom) {
             Spacer()
             Button(action: {}) {
-                Text("close")
+                Image("search_btn")
+                .renderingMode(.original)
             }
             Button(action: {}) {
-                Text("share")
+                Image("bell_btn")
+                .renderingMode(.original)
             }.frame(alignment: .trailing)
             
         }.padding(.top,0)
