@@ -15,7 +15,6 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         let feed = UIHostingController(rootView: FeedView())
         let category = UIHostingController(rootView: CategoryView())
 

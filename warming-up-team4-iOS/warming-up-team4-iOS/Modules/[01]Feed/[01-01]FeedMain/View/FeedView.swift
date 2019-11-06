@@ -94,7 +94,7 @@ struct FeedCellView: View {
             
         }
     }
-}
+
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
