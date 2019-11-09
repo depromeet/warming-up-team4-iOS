@@ -28,6 +28,12 @@ extension UIImage {
     static var iconTabEdit: UIImage {
         return UIImage(named: "iconTabEdit")!
     }
+    static var iconTabHome: UIImage {
+        return UIImage(named: "home_btn_on")!
+    }
+    static var iconTabCategory: UIImage {
+        return UIImage(named: "category_btn_on")!
+    }
 
   static var iconTabMy: UIImage {
     return UIImage(named: "iconTabMy")!

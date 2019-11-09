@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "kakao_talk_photo_2019_10_19_16_30_23.png",
+      "filename" : "category_btn_on.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kakao_talk_photo_2019_10_19_16_30_23@2x.png",
+      "filename" : "category_btn_on@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kakao_talk_photo_2019_10_19_16_30_23@3x.png",
+      "filename" : "category_btn_on@3x.png",
       "scale" : "3x"
     }
   ],

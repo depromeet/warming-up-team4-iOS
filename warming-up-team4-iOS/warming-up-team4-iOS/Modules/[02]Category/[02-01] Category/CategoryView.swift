@@ -7,11 +7,10 @@
 //
 
 import SwiftUI
-import Combine
 struct CategoryView: View {
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading,spacing:0) {
+            VStack(alignment: HorizontalAlignment.leading,spacing:0) {
                 AppNavigationView()
                 LargeTitleView()
                     .frame(height: 100)
@@ -21,7 +20,7 @@ struct CategoryView: View {
                     
                     //NavigationLink(destination:
 //
-                    HStack(alignment: .center,spacing: 0) {
+                    HStack(alignment: VerticalAlignment.center,spacing: 0) {
                         VStack(alignment: .leading,spacing: 10) {
                             HStack {
                                 CategoryCelView(categoryImageName: "category_food")
@@ -48,12 +47,12 @@ struct CategoryView: View {
                             
                         }.accessibility(hidden: true)
                             .layoutPriority(1000)
-                        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
-//                              Spacer()
-                            EmptyView()
-//                            .frame(width: 0, height: 0)
-//                            .layoutPriority(0)
-                           }
+//                        NavigationLink(destination: FeedDetailView(detailModel: feed,dismissParent: {})) {
+////                              Spacer()
+//                            EmptyView()
+////                            .frame(width: 0, height: 0)
+////                            .layoutPriority(0)
+//                           }
                         
                     }
                     

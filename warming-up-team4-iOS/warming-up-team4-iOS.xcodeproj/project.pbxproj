@@ -22,6 +22,8 @@
 		7BA089DA235F272E00377A65 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA089D9235F272E00377A65 /* AppNavigationView.swift */; };
 		7BDDD6AC235DDF83003E369C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AB235DDF83003E369C /* FeedView.swift */; };
 		7BDDD6AF235DE4E5003E369C /* FeedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */; };
+		7BEF897E2375B9780015DAF5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF897D2375B9780015DAF5 /* Feed.swift */; };
+		7BEF89812375C31D0015DAF5 /* FeedDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF89802375C31D0015DAF5 /* FeedDetail.swift */; };
 		7BF20F722361FE39007C93DC /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF20F712361FE39007C93DC /* CategoryDetailView.swift */; };
 		CE2DC635235442BC00A5CD9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC634235442BC00A5CD9E /* AppDelegate.swift */; };
 		CE2DC637235442BC00A5CD9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DC636235442BC00A5CD9E /* SceneDelegate.swift */; };
@@ -71,6 +73,8 @@
 		7BA089D9235F272E00377A65 /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
 		7BDDD6AB235DDF83003E369C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
+		7BEF897D2375B9780015DAF5 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		7BEF89802375C31D0015DAF5 /* FeedDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetail.swift; sourceTree = "<group>"; };
 		7BF20F712361FE39007C93DC /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		A0AF4EA22F3F89E48EDF5885 /* Pods-warming-up-team4-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warming-up-team4-iOS.debug.xcconfig"; path = "Target Support Files/Pods-warming-up-team4-iOS/Pods-warming-up-team4-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2DC631235442BC00A5CD9E /* warming-up-team4-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "warming-up-team4-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				7BDDD6AA235DDF6C003E369C /* View */,
+				7BEF897F2375B97E0015DAF5 /* Model */,
 			);
 			path = "[01-01]FeedMain";
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				7BDDD6B0235DE4F1003E369C /* View */,
+				7BEF89802375C31D0015DAF5 /* FeedDetail.swift */,
 			);
 			path = "[01-02]FeedDetail";
 			sourceTree = "<group>";
@@ -256,6 +262,14 @@
 				7BDDD6AE235DE4E5003E369C /* FeedDetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7BEF897F2375B97E0015DAF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF897D2375B9780015DAF5 /* Feed.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		94F444B7FA0B8C6CF5FA9ACA /* Frameworks */ = {
@@ -521,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE92D29D237199E6005130DD /* UIColor+.swift in Sources */,
+				7BEF89812375C31D0015DAF5 /* FeedDetail.swift in Sources */,
 				E68F8618236EDE8B00C879C8 /* YSView.swift in Sources */,
 				E68F8616236EDDE700C879C8 /* YSCell.swift in Sources */,
 				CE92D2B32371AE01005130DD /* Category.swift in Sources */,
@@ -557,6 +572,7 @@
 				CE92D2A92371A02F005130DD /* BoxedButton.swift in Sources */,
 				CE92D2B12371A5F3005130DD /* YSViewController.swift in Sources */,
 				CEAF4D33236309780009E3DA /* InputChangePlaceView.swift in Sources */,
+				7BEF897E2375B9780015DAF5 /* Feed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +723,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 827YX997NH;
+				DEVELOPMENT_TEAM = SB46A3BWSY;
 				INFOPLIST_FILE = "$(SRCROOT)/warming-up-team4-iOS/SupportingFIles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,7 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 827YX997NH;
+				DEVELOPMENT_TEAM = SB46A3BWSY;
 				INFOPLIST_FILE = "$(SRCROOT)/warming-up-team4-iOS/SupportingFIles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

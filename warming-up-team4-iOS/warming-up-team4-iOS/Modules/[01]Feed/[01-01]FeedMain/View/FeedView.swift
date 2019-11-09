@@ -11,9 +11,10 @@ import Combine
 
 
 
+
 struct FeedView: View {
     
-    @State var users = ["Munon", "Gomin", "Durup"]
+    var feedList = Feed.modelData
     let height: CGFloat = 100.0
     var body: some View {
 
@@ -45,11 +46,11 @@ struct FeedView: View {
             
             
             LargeTitleView()
-            ForEach(users, id:  \.self) { user in
+            ForEach(feedList, id:  \.self) { feed in
                         NavigationLink(destination:
                         
-                        FeedDetailView(dismissParent: {})) {
-                                FeedCellView()
+                        FeedDetailView(detailModel: feed,dismissParent: {})) {
+                                FeedCellView(feed: feed)
                 }
             }
         }
@@ -58,21 +59,21 @@ struct FeedView: View {
 //.font(Font.custom("Montserrat-Bold", size: 60.0))
 
 struct FeedCellView: View {
-    
+    var feed: Feed
     var body: some View {
 //        NavigationLink(destination: FeedDetailView(dismissParent: {})) {
             VStack(alignment: .leading, spacing: 6) {
-                Image("feed_image")
+                Image(feed.image)
                     .resizable()
                     .frame(height: 294)
                     .clipped()
                 Spacer()
                     .frame(height: 9)
-                Text("베드트레이 교환 원해요")
+                Text(feed.title)
                     .font(Font.custom("NanumSquareOTF_acB", size: 28))
-                
+                    .lineLimit(Int.max)
                 HStack(alignment: .bottom, spacing: 0){
-                    Text("23명")
+                    Text("\(feed.wantedNumber)명")
                     .foregroundColor(Color("app_point_color"))
                     .font(Font.custom("NanumSquareOTF_acEB", size: 14))
                     Text("이 교환원해요")
@@ -80,10 +81,10 @@ struct FeedCellView: View {
                     .font(Font.custom("NanumSquareOTF_acR", size: 10))
                 }
                 
-                Text("침대에서 정말 사용하기 편해요. 색상도 이쁘고 원목이라..")
+                Text(feed.content)
                     .foregroundColor(Color("app_list_cotent_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 12))
-                
+                .lineSpacing(3)
                 
             }.padding(.leading, 0)
                 .padding(.bottom, 20)

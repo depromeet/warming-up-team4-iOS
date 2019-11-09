@@ -115,14 +115,38 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 3 colors.
+  /// This `R.color` struct is generated, and contains static references to 6 colors.
   struct color {
+    /// Color `app_Detail_date_color`.
+    static let app_Detail_date_color = Rswift.ColorResource(bundle: R.hostingBundle, name: "app_Detail_date_color")
+    /// Color `app_category_tile_color`.
+    static let app_category_tile_color = Rswift.ColorResource(bundle: R.hostingBundle, name: "app_category_tile_color")
     /// Color `app_content_color`.
     static let app_content_color = Rswift.ColorResource(bundle: R.hostingBundle, name: "app_content_color")
+    /// Color `app_detail_content_color`.
+    static let app_detail_content_color = Rswift.ColorResource(bundle: R.hostingBundle, name: "app_detail_content_color")
     /// Color `app_list_cotent_color`.
     static let app_list_cotent_color = Rswift.ColorResource(bundle: R.hostingBundle, name: "app_list_cotent_color")
     /// Color `app_point_color`.
     static let app_point_color = Rswift.ColorResource(bundle: R.hostingBundle, name: "app_point_color")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "app_Detail_date_color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func app_Detail_date_color(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.app_Detail_date_color, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "app_category_tile_color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func app_category_tile_color(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.app_category_tile_color, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "app_content_color", bundle: ..., traitCollection: ...)`
@@ -130,6 +154,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func app_content_color(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.app_content_color, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "app_detail_content_color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func app_detail_content_color(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.app_detail_content_color, compatibleWith: traitCollection)
     }
     #endif
 
@@ -233,12 +266,56 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 17 images.
+  /// This `R.image` struct is generated, and contains static references to 41 images.
   struct image {
     /// Image `Logo`.
     static let logo = Rswift.ImageResource(bundle: R.hostingBundle, name: "Logo")
+    /// Image `back_btn`.
+    static let back_btn = Rswift.ImageResource(bundle: R.hostingBundle, name: "back_btn")
+    /// Image `bell_btn`.
+    static let bell_btn = Rswift.ImageResource(bundle: R.hostingBundle, name: "bell_btn")
+    /// Image `category_book`.
+    static let category_book = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_book")
+    /// Image `category_btn_on`.
+    static let category_btn_on = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_btn_on")
+    /// Image `category_cosmetic`.
+    static let category_cosmetic = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_cosmetic")
+    /// Image `category_daily_necessity`.
+    static let category_daily_necessity = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_daily_necessity")
+    /// Image `category_electronic`.
+    static let category_electronic = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_electronic")
+    /// Image `category_food`.
+    static let category_food = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_food")
+    /// Image `category_furniture`.
+    static let category_furniture = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_furniture")
+    /// Image `category_man_clothes`.
+    static let category_man_clothes = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_man_clothes")
+    /// Image `category_pet`.
+    static let category_pet = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_pet")
+    /// Image `category_women_clothes`.
+    static let category_women_clothes = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_women_clothes")
+    /// Image `feed_image1`.
+    static let feed_image1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image1")
+    /// Image `feed_image2`.
+    static let feed_image2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image2")
+    /// Image `feed_image3`.
+    static let feed_image3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image3")
+    /// Image `feed_image4`.
+    static let feed_image4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image4")
+    /// Image `feed_image5`.
+    static let feed_image5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image5")
+    /// Image `feed_image6`.
+    static let feed_image6 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image6")
+    /// Image `feed_image7`.
+    static let feed_image7 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image7")
+    /// Image `feed_image8`.
+    static let feed_image8 = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image8")
     /// Image `feed_image`.
     static let feed_image = Rswift.ImageResource(bundle: R.hostingBundle, name: "feed_image")
+    /// Image `home_btn_on`.
+    static let home_btn_on = Rswift.ImageResource(bundle: R.hostingBundle, name: "home_btn_on")
+    /// Image `home_on`.
+    static let home_on = Rswift.ImageResource(bundle: R.hostingBundle, name: "home_on")
     /// Image `iconAccept`.
     static let iconAccept = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconAccept")
     /// Image `iconAdd`.
@@ -269,6 +346,10 @@ struct R: Rswift.Validatable {
     static let iconTabEdit = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconTabEdit")
     /// Image `iconTabMy`.
     static let iconTabMy = Rswift.ImageResource(bundle: R.hostingBundle, name: "iconTabMy")
+    /// Image `search_btn`.
+    static let search_btn = Rswift.ImageResource(bundle: R.hostingBundle, name: "search_btn")
+    /// Image `share_btn`.
+    static let share_btn = Rswift.ImageResource(bundle: R.hostingBundle, name: "share_btn")
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Logo", bundle: ..., traitCollection: ...)`
@@ -278,9 +359,163 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "back_btn", bundle: ..., traitCollection: ...)`
+    static func back_btn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.back_btn, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bell_btn", bundle: ..., traitCollection: ...)`
+    static func bell_btn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bell_btn, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_book", bundle: ..., traitCollection: ...)`
+    static func category_book(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_book, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_btn_on", bundle: ..., traitCollection: ...)`
+    static func category_btn_on(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_btn_on, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_cosmetic", bundle: ..., traitCollection: ...)`
+    static func category_cosmetic(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_cosmetic, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_daily_necessity", bundle: ..., traitCollection: ...)`
+    static func category_daily_necessity(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_daily_necessity, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_electronic", bundle: ..., traitCollection: ...)`
+    static func category_electronic(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_electronic, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_food", bundle: ..., traitCollection: ...)`
+    static func category_food(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_food, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_furniture", bundle: ..., traitCollection: ...)`
+    static func category_furniture(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_furniture, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_man_clothes", bundle: ..., traitCollection: ...)`
+    static func category_man_clothes(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_man_clothes, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_pet", bundle: ..., traitCollection: ...)`
+    static func category_pet(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_pet, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "category_women_clothes", bundle: ..., traitCollection: ...)`
+    static func category_women_clothes(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.category_women_clothes, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "feed_image", bundle: ..., traitCollection: ...)`
     static func feed_image(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.feed_image, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image1", bundle: ..., traitCollection: ...)`
+    static func feed_image1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image2", bundle: ..., traitCollection: ...)`
+    static func feed_image2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image2, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image3", bundle: ..., traitCollection: ...)`
+    static func feed_image3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image3, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image4", bundle: ..., traitCollection: ...)`
+    static func feed_image4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image4, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image5", bundle: ..., traitCollection: ...)`
+    static func feed_image5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image5, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image6", bundle: ..., traitCollection: ...)`
+    static func feed_image6(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image6, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image7", bundle: ..., traitCollection: ...)`
+    static func feed_image7(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image7, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "feed_image8", bundle: ..., traitCollection: ...)`
+    static func feed_image8(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.feed_image8, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "home_btn_on", bundle: ..., traitCollection: ...)`
+    static func home_btn_on(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.home_btn_on, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "home_on", bundle: ..., traitCollection: ...)`
+    static func home_on(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.home_on, compatibleWith: traitCollection)
     }
     #endif
 
@@ -386,6 +621,20 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "iconTabMy", bundle: ..., traitCollection: ...)`
     static func iconTabMy(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconTabMy, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "search_btn", bundle: ..., traitCollection: ...)`
+    static func search_btn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.search_btn, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "share_btn", bundle: ..., traitCollection: ...)`
+    static func share_btn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.share_btn, compatibleWith: traitCollection)
     }
     #endif
 

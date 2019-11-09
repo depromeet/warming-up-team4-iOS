@@ -18,8 +18,11 @@ class MainTabBarController: UITabBarController {
         let feed = UIHostingController(rootView: FeedView())
         let category = UIHostingController(rootView: CategoryView())
 
-        feed.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
-        category.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        
+        feed.tabBarItem = UITabBarItem.init(title: "홈", image: .iconTabHome, tag: 0)
+        
+        category.tabBarItem = UITabBarItem.init(title: "카테고리", image: .iconTabCategory, tag: 1)
+        
 
         let writeVC = WritePostViewController().then {
             $0.tabBarItem = .init(title: "글쓰기", image: .iconTabEdit, tag: 2)

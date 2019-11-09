@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "kakao_talk_photo_2019_10_19_16_30_23.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kakao_talk_photo_2019_10_19_16_30_23@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kakao_talk_photo_2019_10_19_16_30_23@3x.png",
+      "filename" : "feed_image2.jpg",
       "scale" : "3x"
     }
   ],

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct FeedDetailView: View {
+    var detailModel: Feed
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
 
@@ -21,7 +22,7 @@ struct FeedDetailView: View {
                 .frame(height: 40)
             contentView
             divider
-            bottomBar
+           // bottomBar
                 .frame(alignment: .bottomLeading)
         }.navigationBarTitle(Text("Title"))
         .navigationBarHidden(true)
@@ -95,19 +96,20 @@ extension FeedDetailView {
 
 
 extension FeedDetailView {
+    
     var contentView: some View {
         ScrollView {
-            Image("feed_image")
+            Image(detailModel.image)
                 .resizable()
                 .frame(height: 400)
                 .clipped()
             VStack(alignment: .leading, spacing: 8) {
                 Spacer()
                     .frame(height: 20)
-                Text("#가구#원목#인테리어")
+                Text(detailModel.tag)
                     .foregroundColor(Color("app_point_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 13))
-                Text("베드트레이 교환원해요.")
+                Text(detailModel.title)
                     .lineLimit(Int.max)
                     .fixedSize(horizontal: false, vertical: true)
                     .layoutPriority(1000)
@@ -115,7 +117,7 @@ extension FeedDetailView {
                 Text("2019.10.16")
                     .foregroundColor(Color("app_detail_date_color"))
                     .font(Font.custom("NanumSquareOTF_acR", size: 13))
-                Text("치즈랑 매운맛 있어요.\n귀찮을떄 요리해먹기 딱이에요.\n보관도 뚜껑만 잘 닫아주면 돼요!\n다른 식품도 다 받으니까 편하게 신청해주세요~~~")
+                Text(detailModel.content)
                     .foregroundColor(Color("app_detail_content_color"))
                 .font(Font.custom("NanumSquareOTF_acR", size: 16))
                     .lineLimit(Int.max)
@@ -193,6 +195,6 @@ struct AnotherItemView: View {
 }
 struct FeedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedDetailView(dismissParent: {})
+        FeedDetailView(detailModel: Feed(image: "feed_image7", title: "3초 기절 숙면 베개 ", wantedNumber: 11, content: "베고 자기도 좋고 안고 자기도 좋은 베개입니다.\n3개 샀는데 너무 많아서 1개 교환 원해요!\n베고 잤는데 편하고 너무 좋아요~", tag: "#마약#편안#일어나보니지각"), dismissParent: {})
     }
 }
